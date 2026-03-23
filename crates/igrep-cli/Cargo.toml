@@ -1,0 +1,17 @@
+[package]
+name = "igrep-cli"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+igrep-core = { path = "../igrep-core" }
+clap.workspace = true
+anyhow.workspace = true
+
+[[bin]]
+name = "igrep-index"
+path = "src/bin/igrep_index.rs"
+
+[[bin]]
+name = "igrep"
+path = "src/bin/igrep.rs"

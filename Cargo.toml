@@ -1,0 +1,16 @@
+[workspace]
+members = ["crates/igrep-core", "crates/igrep-cli"]
+resolver = "2"
+
+[workspace.dependencies]
+regex-syntax = "0.8"
+regex = "1"
+memmap2 = "0.9"
+ignore = "0.4"
+crc32fast = "1"
+clap = { version = "4", features = ["derive"] }
+proptest = "1"
+criterion = { version = "0.5", features = ["html_reports"] }
+anyhow = "1"
+bstr = "1"
+tempfile = "3"

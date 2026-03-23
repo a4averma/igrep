@@ -1,0 +1,18 @@
+[package]
+name = "igrep-core"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+regex-syntax.workspace = true
+regex.workspace = true
+memmap2.workspace = true
+ignore.workspace = true
+crc32fast.workspace = true
+anyhow.workspace = true
+bstr.workspace = true
+tempfile.workspace = true
+
+[dev-dependencies]
+proptest.workspace = true
+criterion.workspace = true
