@@ -95,8 +95,9 @@ fn enumerate_small_class(class: &Class, limit: usize) -> Option<Vec<Vec<u8>>> {
 }
 
 fn literal_query(literal: &[u8], config: &IndexConfig) -> Query {
+    let lowered: Vec<u8> = literal.iter().map(|b| b.to_ascii_lowercase()).collect();
     let mut hashes = BTreeSet::<NgramHash>::new();
-    for ngram in build_covering_ngrams(literal, config) {
+    for ngram in build_covering_ngrams(&lowered, config) {
         hashes.insert(hash_ngram(&ngram));
     }
 
@@ -227,7 +228,8 @@ mod tests {
 
     fn literal_hashes(s: &str) -> BTreeSet<NgramHash> {
         let config = IndexConfig::default();
-        build_covering_ngrams(s.as_bytes(), &config)
+        let lowered: Vec<u8> = s.bytes().map(|b| b.to_ascii_lowercase()).collect();
+        build_covering_ngrams(&lowered, &config)
             .into_iter()
             .map(|ngram| hash_ngram(&ngram))
             .collect()

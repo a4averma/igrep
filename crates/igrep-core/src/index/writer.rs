@@ -27,7 +27,12 @@ impl IndexWriter {
     }
 
     pub fn add_file(&mut self, doc_id: DocId, path: &str, content: &[u8]) {
-        let ngrams = build_all_ngrams(content, &self.config);
+        // Store n-grams from lowercased content so both case-sensitive and
+        // case-insensitive queries can share the same index.  Case-sensitive
+        // queries may see slightly more candidates (false positives) but the
+        // regex verification pass eliminates them.
+        let lowered: Vec<u8> = content.iter().map(|b| b.to_ascii_lowercase()).collect();
+        let ngrams = build_all_ngrams(&lowered, &self.config);
         for ngram in &ngrams {
             self.entries.push((hash_ngram(ngram), doc_id));
         }
@@ -151,7 +156,8 @@ mod tests {
 
         let mut unique_hashes: HashSet<NgramHash> = HashSet::new();
         for (_, _, content) in &files {
-            for ngram in build_all_ngrams(content, &config) {
+            let lowered: Vec<u8> = content.iter().map(|b| b.to_ascii_lowercase()).collect();
+            for ngram in build_all_ngrams(&lowered, &config) {
                 unique_hashes.insert(hash_ngram(&ngram));
             }
         }
