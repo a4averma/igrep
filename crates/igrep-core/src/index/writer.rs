@@ -39,6 +39,11 @@ impl IndexWriter {
         self.file_paths.push((doc_id, path.to_string()));
     }
 
+    /// Returns the number of (ngram_hash, doc_id) pairs collected so far.
+    pub fn entry_count(&self) -> usize {
+        self.entries.len()
+    }
+
     pub fn finish(mut self, output_dir: &Path) -> Result<IndexMeta> {
         fs::create_dir_all(output_dir).with_context(|| {
             format!(
