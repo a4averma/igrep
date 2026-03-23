@@ -74,7 +74,7 @@ pub fn extract_trigrams_with_masks(input: &[u8]) -> Vec<TrigramWithMasks> {
 /// We check if shifting mask_a left by 1 (with wrap from bit 7 to bit 0)
 /// overlaps with mask_b.
 pub fn check_adjacency(mask_a: u8, mask_b: u8) -> bool {
-    let shifted = (mask_a << 1) | (mask_a >> 7);
+    let shifted = mask_a.rotate_left(1);
     (shifted & mask_b) != 0
 }
 

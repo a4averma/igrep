@@ -8,7 +8,6 @@
 /// weights, while rare pairs like `qz`, `#!`, or control-char combinations
 /// produce high weights.  The sparse n-gram algorithm uses high-weight bigrams
 /// as segment boundaries to generate longer, more selective n-grams.
-
 /// Rarity score for every byte value (0–255).
 ///
 /// Lower score = more common in source code.  The table is hand-tuned from

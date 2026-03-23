@@ -37,7 +37,7 @@ pub fn walk(root: &Path, config: &IndexConfig) -> Result<Vec<(DocId, PathBuf)>> 
         let entry = entry?;
 
         // Skip directories — we only want files
-        if !entry.file_type().map_or(false, |ft| ft.is_file()) {
+        if !entry.file_type().is_some_and(|ft| ft.is_file()) {
             continue;
         }
 
