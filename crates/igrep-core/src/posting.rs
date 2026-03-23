@@ -81,6 +81,113 @@ pub fn decode_posting_list(data: &[u8], pos: &mut usize) -> Vec<DocId> {
     result
 }
 
+// ─── Set Operations on Sorted Posting Lists ───
+
+/// Linear merge-intersection of two sorted lists. O(n+m).
+/// Both inputs must be sorted. Output is sorted.
+pub fn intersect(a: &[DocId], b: &[DocId]) -> Vec<DocId> {
+    let mut result = Vec::new();
+    let (mut i, mut j) = (0, 0);
+    while i < a.len() && j < b.len() {
+        match a[i].cmp(&b[j]) {
+            std::cmp::Ordering::Less => i += 1,
+            std::cmp::Ordering::Greater => j += 1,
+            std::cmp::Ordering::Equal => {
+                result.push(a[i]);
+                i += 1;
+                j += 1;
+            }
+        }
+    }
+    result
+}
+
+/// Linear merge-union of two sorted lists. O(n+m).
+/// Both inputs must be sorted. Output is sorted and deduplicated.
+pub fn union(a: &[DocId], b: &[DocId]) -> Vec<DocId> {
+    let mut result = Vec::with_capacity(a.len() + b.len());
+    let (mut i, mut j) = (0, 0);
+    while i < a.len() && j < b.len() {
+        match a[i].cmp(&b[j]) {
+            std::cmp::Ordering::Less => {
+                result.push(a[i]);
+                i += 1;
+            }
+            std::cmp::Ordering::Greater => {
+                result.push(b[j]);
+                j += 1;
+            }
+            std::cmp::Ordering::Equal => {
+                result.push(a[i]);
+                i += 1;
+                j += 1;
+            }
+        }
+    }
+    result.extend_from_slice(&a[i..]);
+    result.extend_from_slice(&b[j..]);
+    result
+}
+
+/// Intersect multiple sorted lists. Starts with shortest for early termination.
+/// Returns empty if `lists` is empty.
+pub fn intersect_many(lists: &[&[DocId]]) -> Vec<DocId> {
+    if lists.is_empty() {
+        return Vec::new();
+    }
+    let mut order: Vec<usize> = (0..lists.len()).collect();
+    order.sort_unstable_by_key(|&i| lists[i].len());
+
+    let mut acc = lists[order[0]].to_vec();
+    for &idx in &order[1..] {
+        acc = intersect(&acc, lists[idx]);
+        if acc.is_empty() {
+            break;
+        }
+    }
+    acc
+}
+
+/// Union multiple sorted lists.
+/// Returns empty if `lists` is empty.
+pub fn union_many(lists: &[&[DocId]]) -> Vec<DocId> {
+    if lists.is_empty() {
+        return Vec::new();
+    }
+    let mut acc = lists[0].to_vec();
+    for &list in &lists[1..] {
+        acc = union(&acc, list);
+    }
+    acc
+}
+
+/// Remove all elements of `b` from `a`. Both must be sorted. Output is sorted.
+pub fn subtract(a: &[DocId], b: &[DocId]) -> Vec<DocId> {
+    let mut result = Vec::new();
+    let (mut i, mut j) = (0, 0);
+    while i < a.len() {
+        if j < b.len() {
+            match a[i].cmp(&b[j]) {
+                std::cmp::Ordering::Less => {
+                    result.push(a[i]);
+                    i += 1;
+                }
+                std::cmp::Ordering::Greater => {
+                    j += 1;
+                }
+                std::cmp::Ordering::Equal => {
+                    i += 1;
+                    j += 1;
+                }
+            }
+        } else {
+            result.extend_from_slice(&a[i..]);
+            break;
+        }
+    }
+    result
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
@@ -316,6 +423,126 @@ mod tests {
         assert!(decoded.is_empty());
     }
 
+    // ─── Set Operation Tests ───
+
+    #[test]
+    fn test_intersect_basic() {
+        assert_eq!(intersect(&[1, 3, 5, 7], &[2, 3, 6, 7]), vec![3, 7]);
+    }
+
+    #[test]
+    fn test_intersect_empty_left() {
+        assert_eq!(intersect(&[], &[1, 2, 3]), Vec::<DocId>::new());
+    }
+
+    #[test]
+    fn test_intersect_empty_right() {
+        assert_eq!(intersect(&[1, 2, 3], &[]), Vec::<DocId>::new());
+    }
+
+    #[test]
+    fn test_intersect_both_empty() {
+        assert_eq!(intersect(&[], &[]), Vec::<DocId>::new());
+    }
+
+    #[test]
+    fn test_intersect_no_overlap() {
+        assert_eq!(intersect(&[1, 3, 5], &[2, 4, 6]), Vec::<DocId>::new());
+    }
+
+    #[test]
+    fn test_intersect_identical() {
+        assert_eq!(intersect(&[1, 2, 3], &[1, 2, 3]), vec![1, 2, 3]);
+    }
+
+    #[test]
+    fn test_union_basic() {
+        assert_eq!(union(&[1, 3, 5], &[2, 3, 6]), vec![1, 2, 3, 5, 6]);
+    }
+
+    #[test]
+    fn test_union_empty_left() {
+        assert_eq!(union(&[], &[1, 2, 3]), vec![1, 2, 3]);
+    }
+
+    #[test]
+    fn test_union_empty_right() {
+        assert_eq!(union(&[1, 2, 3], &[]), vec![1, 2, 3]);
+    }
+
+    #[test]
+    fn test_union_both_empty() {
+        assert_eq!(union(&[], &[]), Vec::<DocId>::new());
+    }
+
+    #[test]
+    fn test_union_identical() {
+        assert_eq!(union(&[1, 2, 3], &[1, 2, 3]), vec![1, 2, 3]);
+    }
+
+    #[test]
+    fn test_subtract_basic() {
+        assert_eq!(subtract(&[1, 2, 3, 4, 5], &[2, 4]), vec![1, 3, 5]);
+    }
+
+    #[test]
+    fn test_subtract_empty_b() {
+        assert_eq!(subtract(&[1, 2, 3], &[]), vec![1, 2, 3]);
+    }
+
+    #[test]
+    fn test_subtract_empty_a() {
+        assert_eq!(subtract(&[], &[1, 2, 3]), Vec::<DocId>::new());
+    }
+
+    #[test]
+    fn test_subtract_identical() {
+        assert_eq!(subtract(&[1, 2, 3], &[1, 2, 3]), Vec::<DocId>::new());
+    }
+
+    #[test]
+    fn test_subtract_no_overlap() {
+        assert_eq!(subtract(&[1, 3, 5], &[2, 4, 6]), vec![1, 3, 5]);
+    }
+
+    #[test]
+    fn test_intersect_many_three_lists() {
+        let a: Vec<DocId> = vec![1, 2, 3, 4, 5];
+        let b: Vec<DocId> = vec![2, 3, 4, 6];
+        let c: Vec<DocId> = vec![3, 4, 7];
+        assert_eq!(intersect_many(&[&a, &b, &c]), vec![3, 4]);
+    }
+
+    #[test]
+    fn test_intersect_many_empty_input() {
+        assert_eq!(intersect_many(&[]), Vec::<DocId>::new());
+    }
+
+    #[test]
+    fn test_intersect_many_single_list() {
+        let a: Vec<DocId> = vec![1, 2, 3];
+        assert_eq!(intersect_many(&[&a]), vec![1, 2, 3]);
+    }
+
+    #[test]
+    fn test_union_many_three_lists() {
+        let a: Vec<DocId> = vec![1, 3];
+        let b: Vec<DocId> = vec![2, 4];
+        let c: Vec<DocId> = vec![3, 5];
+        assert_eq!(union_many(&[&a, &b, &c]), vec![1, 2, 3, 4, 5]);
+    }
+
+    #[test]
+    fn test_union_many_empty_input() {
+        assert_eq!(union_many(&[]), Vec::<DocId>::new());
+    }
+
+    #[test]
+    fn test_union_many_single_list() {
+        let a: Vec<DocId> = vec![1, 2, 3];
+        assert_eq!(union_many(&[&a]), vec![1, 2, 3]);
+    }
+
     // ─── Property Tests ───
 
     mod proptests {
@@ -359,6 +586,89 @@ mod tests {
                 for window in decoded.windows(2) {
                     prop_assert!(window[0] < window[1],
                         "decoded list not sorted: {} >= {}", window[0], window[1]);
+                }
+            }
+
+            #[test]
+            fn intersect_is_subset_of_both(
+                mut a in prop::collection::vec(0u32..10_000, 0..100),
+                mut b in prop::collection::vec(0u32..10_000, 0..100),
+            ) {
+                a.sort_unstable(); a.dedup();
+                b.sort_unstable(); b.dedup();
+                let result = intersect(&a, &b);
+                for &x in &result {
+                    prop_assert!(a.contains(&x), "intersect result {} not in a", x);
+                    prop_assert!(b.contains(&x), "intersect result {} not in b", x);
+                }
+            }
+
+            #[test]
+            fn union_contains_both_inputs(
+                mut a in prop::collection::vec(0u32..10_000, 0..100),
+                mut b in prop::collection::vec(0u32..10_000, 0..100),
+            ) {
+                a.sort_unstable(); a.dedup();
+                b.sort_unstable(); b.dedup();
+                let result = union(&a, &b);
+                for &x in &a {
+                    prop_assert!(result.contains(&x), "union missing {} from a", x);
+                }
+                for &x in &b {
+                    prop_assert!(result.contains(&x), "union missing {} from b", x);
+                }
+            }
+
+            #[test]
+            fn intersect_output_is_sorted(
+                mut a in prop::collection::vec(0u32..10_000, 0..100),
+                mut b in prop::collection::vec(0u32..10_000, 0..100),
+            ) {
+                a.sort_unstable(); a.dedup();
+                b.sort_unstable(); b.dedup();
+                let result = intersect(&a, &b);
+                for window in result.windows(2) {
+                    prop_assert!(window[0] < window[1]);
+                }
+            }
+
+            #[test]
+            fn union_output_is_sorted(
+                mut a in prop::collection::vec(0u32..10_000, 0..100),
+                mut b in prop::collection::vec(0u32..10_000, 0..100),
+            ) {
+                a.sort_unstable(); a.dedup();
+                b.sort_unstable(); b.dedup();
+                let result = union(&a, &b);
+                for window in result.windows(2) {
+                    prop_assert!(window[0] < window[1]);
+                }
+            }
+
+            #[test]
+            fn subtract_output_is_sorted(
+                mut a in prop::collection::vec(0u32..10_000, 0..100),
+                mut b in prop::collection::vec(0u32..10_000, 0..100),
+            ) {
+                a.sort_unstable(); a.dedup();
+                b.sort_unstable(); b.dedup();
+                let result = subtract(&a, &b);
+                for window in result.windows(2) {
+                    prop_assert!(window[0] < window[1]);
+                }
+            }
+
+            #[test]
+            fn subtract_excludes_b(
+                mut a in prop::collection::vec(0u32..10_000, 0..100),
+                mut b in prop::collection::vec(0u32..10_000, 0..100),
+            ) {
+                a.sort_unstable(); a.dedup();
+                b.sort_unstable(); b.dedup();
+                let result = subtract(&a, &b);
+                for &x in &result {
+                    prop_assert!(!b.contains(&x), "subtract result {} found in b", x);
+                    prop_assert!(a.contains(&x), "subtract result {} not in a", x);
                 }
             }
         }
