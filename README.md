@@ -10,7 +10,7 @@
 
 Traditional code search tools (`grep`, `ripgrep`) must scan every byte of every file on each query. For large codebases this takes seconds — too slow for interactive use.
 
-Inspired by [Vicent Marti's blog post on how Cursor built their code search](https://www.cursor.com/blog/instant-apply), `igrep` takes a different approach: build an index once, then answer queries by reading only the files that *could* contain a match.
+Inspired by [Vicent Marti's blog post on how Cursor built their code search](https://cursor.com/blog/fast-regex-search), `igrep` takes a different approach: build an index once, then answer queries by reading only the files that *could* contain a match.
 
 ## How It Works
 
