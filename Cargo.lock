@@ -423,6 +423,7 @@ dependencies = [
  "anyhow",
  "clap",
  "igrep-core",
+ "regex",
 ]
 
 [[package]]
