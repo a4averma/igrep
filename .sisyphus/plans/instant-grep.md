@@ -219,7 +219,7 @@ Task 1 → Task 3 → Task 5 → Task 10 → Task 14 → Task 17 → Task 21 →
 
 ## TODOs
 
-- [ ] 1. Initialize Cargo workspace with igrep-core and igrep-cli crates
+- [x] 1. Initialize Cargo workspace with igrep-core and igrep-cli crates
 
   **What to do**:
   - Create a Cargo workspace at the project root with two member crates: `crates/igrep-core` (lib) and `crates/igrep-cli` (bin)
@@ -310,7 +310,7 @@ Task 1 → Task 3 → Task 5 → Task 10 → Task 14 → Task 17 → Task 21 →
   - Files: `Cargo.toml, crates/**, .gitignore`
   - Pre-commit: `cargo check --workspace`
 
-- [ ] 2. Generate and embed bigram frequency table for sparse n-gram weights
+- [x] 2. Generate and embed bigram frequency table for sparse n-gram weights
 
   **What to do**:
   - Create `crates/igrep-core/src/frequency_table.rs` with a module that provides bigram weights
@@ -393,7 +393,7 @@ Task 1 → Task 3 → Task 5 → Task 10 → Task 14 → Task 17 → Task 21 →
   - Files: `crates/igrep-core/src/frequency_table.rs, crates/igrep-core/data/bigram_freq.bin`
   - Pre-commit: `cargo test -p igrep-core`
 
-- [ ] 3. Core types module (DocId, NgramHash, Query, PostingList)
+- [x] 3. Core types module (DocId, NgramHash, Query, PostingList)
 
   **What to do**:
   - Create `crates/igrep-core/src/types.rs` with foundational types used across all modules:
@@ -462,7 +462,7 @@ Task 1 → Task 3 → Task 5 → Task 10 → Task 14 → Task 17 → Task 21 →
   - Files: `crates/igrep-core/src/types.rs, crates/igrep-core/src/lib.rs`
   - Pre-commit: `cargo test -p igrep-core`
 
-- [ ] 4. Test fixtures directory with known-answer corpus
+- [x] 4. Test fixtures directory with known-answer corpus
 
   **What to do**:
   - Create `test-fixtures/` at project root with a small, deterministic test corpus of ~20-30 files
@@ -529,7 +529,7 @@ Task 1 → Task 3 → Task 5 → Task 10 → Task 14 → Task 17 → Task 21 →
   - Files: `test-fixtures/**/*`
   - Pre-commit: none (no code to test)
 
-- [ ] 5. Sparse n-gram engine: build_all (monotone stack algorithm)
+- [x] 5. Sparse n-gram engine: build_all (monotone stack algorithm)
 
   **What to do**:
   - Create `crates/igrep-core/src/ngram.rs` with the `build_all` function
@@ -620,7 +620,7 @@ Task 1 → Task 3 → Task 5 → Task 10 → Task 14 → Task 17 → Task 21 →
   - Files: `crates/igrep-core/src/ngram.rs, crates/igrep-core/src/lib.rs`
   - Pre-commit: `cargo test -p igrep-core`
 
-- [ ] 6. Sparse n-gram engine: build_covering (deque algorithm)
+- [x] 6. Sparse n-gram engine: build_covering (deque algorithm)
 
   **What to do**:
   - Add `build_covering` to `crates/igrep-core/src/ngram.rs`:
@@ -704,7 +704,7 @@ Task 1 → Task 3 → Task 5 → Task 10 → Task 14 → Task 17 → Task 21 →
   - Files: `crates/igrep-core/src/ngram.rs`
   - Pre-commit: `cargo test -p igrep-core`
 
-- [ ] 7. Classic trigram extraction and probabilistic masks
+- [x] 7. Classic trigram extraction and probabilistic masks
 
   **What to do**:
   - Create `crates/igrep-core/src/trigram.rs` with classic trigram extraction and bloom filter masks
@@ -787,7 +787,7 @@ Task 1 → Task 3 → Task 5 → Task 10 → Task 14 → Task 17 → Task 21 →
   - Files: `crates/igrep-core/src/trigram.rs, crates/igrep-core/src/lib.rs`
   - Pre-commit: `cargo test -p igrep-core`
 
-- [ ] 8. Varint encoding/decoding and delta-encoded posting lists
+- [x] 8. Varint encoding/decoding and delta-encoded posting lists
 
   **What to do**:
   - Create `crates/igrep-core/src/posting.rs` with posting list encoding/decoding
@@ -868,7 +868,7 @@ Task 1 → Task 3 → Task 5 → Task 10 → Task 14 → Task 17 → Task 21 →
   - Files: `crates/igrep-core/src/posting.rs, crates/igrep-core/src/lib.rs`
   - Pre-commit: `cargo test -p igrep-core`
 
-- [ ] 9. Posting list intersection (AND) and union (OR)
+- [x] 9. Posting list intersection (AND) and union (OR)
 
   **What to do**:
   - Add to `crates/igrep-core/src/posting.rs`:
@@ -946,7 +946,7 @@ Task 1 → Task 3 → Task 5 → Task 10 → Task 14 → Task 17 → Task 21 →
   - Files: `crates/igrep-core/src/posting.rs`
   - Pre-commit: `cargo test -p igrep-core`
 
-- [ ] 10. Regex → query tree decomposition (Cox 5-property algorithm)
+- [x] 10. Regex → query tree decomposition (Cox 5-property algorithm)
 
   **What to do**:
   - Create `crates/igrep-core/src/query.rs` with the regex-to-query-tree decomposition
@@ -1048,7 +1048,7 @@ Task 1 → Task 3 → Task 5 → Task 10 → Task 14 → Task 17 → Task 21 →
   - Files: `crates/igrep-core/src/query.rs, crates/igrep-core/src/lib.rs`
   - Pre-commit: `cargo test -p igrep-core`
 
-- [ ] 11. Index writer (2-pass construction: extract → sort → write)
+- [x] 11. Index writer (2-pass construction: extract → sort → write)
 
   **What to do**:
   - Create `crates/igrep-core/src/index/mod.rs` and `crates/igrep-core/src/index/writer.rs`
@@ -1138,7 +1138,7 @@ Task 1 → Task 3 → Task 5 → Task 10 → Task 14 → Task 17 → Task 21 →
   - Files: `crates/igrep-core/src/index/mod.rs, crates/igrep-core/src/index/writer.rs`
   - Pre-commit: `cargo test -p igrep-core`
 
-- [ ] 12. Index reader (mmap + binary search + posting decode)
+- [x] 12. Index reader (mmap + binary search + posting decode)
 
   **What to do**:
   - Create `crates/igrep-core/src/index/reader.rs`
@@ -1235,7 +1235,7 @@ Task 1 → Task 3 → Task 5 → Task 10 → Task 14 → Task 17 → Task 21 →
   - Files: `crates/igrep-core/src/index/reader.rs`
   - Pre-commit: `cargo test -p igrep-core`
 
-- [ ] 13. File walker with binary detection and .gitignore support
+- [x] 13. File walker with binary detection and .gitignore support
 
   **What to do**:
   - Create `crates/igrep-core/src/walker.rs`
@@ -1311,7 +1311,7 @@ Task 1 → Task 3 → Task 5 → Task 10 → Task 14 → Task 17 → Task 21 →
   - Files: `crates/igrep-core/src/walker.rs, crates/igrep-core/src/lib.rs`
   - Pre-commit: `cargo test -p igrep-core`
 
-- [ ] 14. End-to-end search pipeline (index → query → verify)
+- [x] 14. End-to-end search pipeline (index → query → verify)
 
   **What to do**:
   - Create `crates/igrep-core/src/search.rs` with the full search pipeline:
@@ -1402,7 +1402,7 @@ Task 1 → Task 3 → Task 5 → Task 10 → Task 14 → Task 17 → Task 21 →
   - Files: `crates/igrep-core/src/search.rs, crates/igrep-core/src/lib.rs`
   - Pre-commit: `cargo test -p igrep-core`
 
-- [ ] 15. Git-based index versioning with dirty overlay
+- [x] 15. Git-based index versioning with dirty overlay
 
   **What to do**:
   - Create `crates/igrep-core/src/git_overlay.rs`
@@ -1482,7 +1482,7 @@ Task 1 → Task 3 → Task 5 → Task 10 → Task 14 → Task 17 → Task 21 →
   - Files: `crates/igrep-core/src/git_overlay.rs, crates/igrep-core/src/lib.rs`
   - Pre-commit: `cargo test -p igrep-core`
 
-- [ ] 16. Case-insensitive search support
+- [x] 16. Case-insensitive search support
 
   **What to do**:
   - Modify the index writer (Task 11) and search pipeline (Task 14) to support case-insensitive search:
@@ -1552,7 +1552,7 @@ Task 1 → Task 3 → Task 5 → Task 10 → Task 14 → Task 17 → Task 21 →
   - Files: `crates/igrep-core/src/search.rs, crates/igrep-core/src/query.rs, crates/igrep-core/src/index/writer.rs`
   - Pre-commit: `cargo test -p igrep-core`
 
-- [ ] 17. igrep-index CLI command with clap
+- [x] 17. igrep-index CLI command with clap
 
   **What to do**:
   - Implement the `igrep-index` binary in `crates/igrep-cli/src/bin/igrep_index.rs`:
@@ -1635,7 +1635,7 @@ Task 1 → Task 3 → Task 5 → Task 10 → Task 14 → Task 17 → Task 21 →
   - Files: `crates/igrep-cli/src/bin/igrep_index.rs, crates/igrep-cli/Cargo.toml`
   - Pre-commit: `cargo test -p igrep-cli`
 
-- [ ] 18. igrep search CLI command with grep-compatible output
+- [x] 18. igrep search CLI command with grep-compatible output
 
   **What to do**:
   - Implement the `igrep` binary in `crates/igrep-cli/src/bin/igrep.rs`:
@@ -1718,7 +1718,7 @@ Task 1 → Task 3 → Task 5 → Task 10 → Task 14 → Task 17 → Task 21 →
   - Files: `crates/igrep-cli/src/bin/igrep.rs`
   - Pre-commit: `cargo test -p igrep-cli`
 
-- [ ] 19. CLI flags: -l, -c, -n, -i, -f
+- [x] 19. CLI flags: -l, -c, -n, -i, -f
 
   **What to do**:
   - Add standard grep flags to the `igrep` CLI:
@@ -1791,7 +1791,7 @@ Task 1 → Task 3 → Task 5 → Task 10 → Task 14 → Task 17 → Task 21 →
   - Files: `crates/igrep-cli/src/bin/igrep.rs`
   - Pre-commit: `cargo test -p igrep-cli`
 
-- [ ] 20. Criterion benchmarks (index build + search latency)
+- [x] 20. Criterion benchmarks (index build + search latency)
 
   **What to do**:
   - Create `crates/igrep-core/benches/` directory with benchmark files:
@@ -1861,7 +1861,7 @@ Task 1 → Task 3 → Task 5 → Task 10 → Task 14 → Task 17 → Task 21 →
   - Files: `crates/igrep-core/benches/*.rs, crates/igrep-core/Cargo.toml`
   - Pre-commit: `cargo bench --workspace -- --quick`
 
-- [ ] 21. Integration tests: igrep vs grep correctness
+- [x] 21. Integration tests: igrep vs grep correctness
 
   **What to do**:
   - Create `tests/integration/` directory at workspace root (or `crates/igrep-core/tests/integration.rs`)
@@ -1944,19 +1944,19 @@ Task 1 → Task 3 → Task 5 → Task 10 → Task 14 → Task 17 → Task 21 →
 
 > 4 review agents run in PARALLEL. ALL must APPROVE. Present consolidated results to user and get explicit "okay" before completing.
 
-- [ ] F1. **Plan Compliance Audit** — `oracle`
+- [x] F1. **Plan Compliance Audit** — `oracle`
   Read the plan end-to-end. For each "Must Have": verify implementation exists (read file, run `cargo test`, run CLI command). For each "Must NOT Have": search codebase for forbidden patterns (`grep -r "TODO\|FIXME\|as any\|unwrap()" src/`) — reject with file:line if found. Check evidence files exist in `.sisyphus/evidence/`. Compare deliverables against plan.
   Output: `Must Have [N/N] | Must NOT Have [N/N] | Tasks [N/N] | VERDICT: APPROVE/REJECT`
 
-- [ ] F2. **Code Quality Review** — `unspecified-high`
+- [x] F2. **Code Quality Review** — `unspecified-high`
   Run `cargo clippy --workspace -- -D warnings` + `cargo test --workspace` + `cargo bench --workspace -- --quick`. Review all source files for: unnecessary `unwrap()`, empty error handling, `todo!()` macros, commented-out code, unused imports. Check AI slop: excessive comments, over-abstraction, generic names.
   Output: `Build [PASS/FAIL] | Clippy [PASS/FAIL] | Tests [N pass/N fail] | Files [N clean/N issues] | VERDICT`
 
-- [ ] F3. **Real Manual QA** — `unspecified-high`
+- [x] F3. **Real Manual QA** — `unspecified-high`
   Start from clean state (`cargo build --release`). Execute EVERY QA scenario from EVERY task — follow exact steps, capture evidence. Test cross-task integration (index build → search → git overlay working together). Test edge cases: empty files, binary files, very large files, regex matching empty string. Save to `.sisyphus/evidence/final-qa/`.
   Output: `Scenarios [N/N pass] | Integration [N/N] | Edge Cases [N tested] | VERDICT`
 
-- [ ] F4. **Scope Fidelity Check** — `deep`
+- [x] F4. **Scope Fidelity Check** — `deep`
   For each task: read "What to do", read actual implementation (`git diff` or file contents). Verify 1:1 — everything in spec was built (no missing), nothing beyond spec was built (no creep). Check "Must NOT do" compliance across all tasks. Detect cross-task contamination. Flag unaccounted files.
   Output: `Tasks [N/N compliant] | Contamination [CLEAN/N issues] | Unaccounted [CLEAN/N files] | VERDICT`
 

@@ -1,21 +1,7 @@
 {
   "version": "1.0.0",
-  "lastUpdated": "2026-03-23T18:12:29.264Z",
+  "lastUpdated": "2026-03-23T20:06:47.552Z",
   "components": {
-    "Inline": {
-      "name": "Inline",
-      "category": "layouts",
-      "description": "Inline component for layouts with 4 props and 1 slot",
-      "tags": [
-        "composable"
-      ],
-      "relatedComponents": [],
-      "variants": [],
-      "commonProps": [],
-      "storybookStories": [],
-      "path": "../wayground/frontend/packages/quizizz-ui/src/components/layouts/Inline/Inline.vue",
-      "hasStorybook": false
-    },
     "Stack": {
       "name": "Stack",
       "category": "layouts",
@@ -74,6 +60,20 @@
       ],
       "path": "../wayground/frontend/packages/quizizz-ui/src/components/layouts/Scrollable/Scrollable.vue",
       "hasStorybook": true
+    },
+    "Inline": {
+      "name": "Inline",
+      "category": "layouts",
+      "description": "Inline component for layouts with 4 props and 1 slot",
+      "tags": [
+        "composable"
+      ],
+      "relatedComponents": [],
+      "variants": [],
+      "commonProps": [],
+      "storybookStories": [],
+      "path": "../wayground/frontend/packages/quizizz-ui/src/components/layouts/Inline/Inline.vue",
+      "hasStorybook": false
     },
     "Grid": {
       "name": "Grid",
@@ -138,6 +138,292 @@
       "storybookStories": [],
       "path": "../wayground/frontend/packages/quizizz-ui/src/components/layouts/Floating/Floating.vue",
       "hasStorybook": false
+    },
+    "Flex": {
+      "name": "Flex",
+      "category": "layouts",
+      "description": "Flex component for layouts and 1 slot",
+      "tags": [
+        "Layouts/Flex",
+        "autodocs",
+        "composable"
+      ],
+      "relatedComponents": [
+        "Text",
+        "Box",
+        "FixedSize",
+        "Absolute",
+        "SkeletonLoader",
+        "Button",
+        "Divider",
+        "Surface",
+        "Columns",
+        "FormSourceSelector",
+        "Icon",
+        "TextField",
+        "IconButton",
+        "Heading",
+        "Modal",
+        "Tooltip",
+        "Column",
+        "Grid",
+        "Animate",
+        "TruncatedText",
+        "Image",
+        "Scrollable",
+        "Pill",
+        "AccommodationsStudentTile",
+        "HintDisplay",
+        "InteractiveGudda",
+        "CallActionbar",
+        "PermissionGuideModal",
+        "Sticky",
+        "EmptyState",
+        "SndDashboard",
+        "TextBlock",
+        "Transition",
+        "Footer",
+        "AutoFlow",
+        "Dialog",
+        "NamespaceProvider",
+        "Fixed",
+        "AssignCollaboratorsModal",
+        "AdminReferralLeadModal",
+        "AccommodationsPreviewModal",
+        "SearchBar",
+        "Popover",
+        "ImageUploadModal",
+        "CustomSettingsBanner",
+        "PopoverContent",
+        "RoleplayAggregationTable",
+        "RoleplayAggregationMatrix",
+        "Toggle",
+        "HorizontalBarWithProgress",
+        "ShadowButton",
+        "GameSettingDivider",
+        "QuestionDetailsCardLoader",
+        "ProfileBadges",
+        "Navbar",
+        "Message",
+        "FiltersSideSheet",
+        "StandardInfoModal",
+        "PlayerEventInfoModal",
+        "SndDashboardPrint",
+        "MediaTile",
+        "AccountabilityTable",
+        "MarketingBanner",
+        "GoogleDrivePickerV2",
+        "TeacherPacedSelectionModal",
+        "Thumbnail",
+        "AutoWarnStudentsModal",
+        "SettingItem",
+        "Teleport",
+        "TextInputArea",
+        "Checkbox",
+        "PreviewOnboarding",
+        "SlideViewer",
+        "VettedBadgeWithInfoPopover",
+        "FileUpload",
+        "AddCaseLoadStudentsModal",
+        "LinkAction",
+        "ActivityDetailActions",
+        "TabGroup",
+        "UnsavedVersionsModalForAssign",
+        "CopyWithVersionsModalFromADPCopyAndEdit",
+        "PDFPreviewModal",
+        "Stack",
+        "Loading",
+        "SectionProgressLoader",
+        "SectionErrorState",
+        "RubricDisplay",
+        "ProductCardV1",
+        "ProductUpdateModal",
+        "ProductDocumentsModal",
+        "StudentPerformanceChart",
+        "PlayerDeletionWarning",
+        "StudentSelectBanner",
+        "NetworkRecommendationsInAllStudentsEditor",
+        "StandardTags",
+        "ActivityDetailsActions",
+        "ModalManager",
+        "IntersectionObserverTrigger",
+        "WorksheetCustomSettings",
+        "PassageCustomSettings",
+        "SideSheet",
+        "UploadContainerV2",
+        "NoActivitiesExistState",
+        "ListAndPreview",
+        "DOKInfoModal",
+        "ObjectionEvaluationSection",
+        "BottomSheet",
+        "BlankIndicator",
+        "PlayerInfractionCard",
+        "ProgressBar",
+        "FileDetails",
+        "QLink",
+        "BuyerMediaPlayer",
+        "ActivityTable",
+        "ProfileHeaderLoader",
+        "ScrollPanel",
+        "ReviewSection",
+        "Table",
+        "TeleportToLayer5",
+        "ShareResourceModal",
+        "TeamsCreateModal",
+        "ObjectionModalV3",
+        "IVADocumentSelectorModal",
+        "ClassAssignmentV2",
+        "CSMBranding",
+        "IntersectionTrigger",
+        "NonPilotCaseManagerDashboardBody",
+        "CaseManagersList",
+        "SelectBox",
+        "ErrorPage",
+        "LoadingState",
+        "Carousel",
+        "StandardAlignedTags",
+        "AIEnhanceSidebar",
+        "ActivityGrade",
+        "ActivityDifficultyIndicator",
+        "ActivityAuthor",
+        "DashboardSectionEmptyState",
+        "ComprehensionQuizPreview",
+        "StandardTagLabel",
+        "MaskedBlur",
+        "PlansComingSoonFeatures",
+        "GroupDetailsTabContent",
+        "ButtonV2",
+        "LDBErrorState",
+        "ChromeExtensionInstallationModal",
+        "AgendaOfRoleplayModal",
+        "GuidelinesModal",
+        "Loader",
+        "OverviewTab",
+        "UserReview",
+        "MultiSelect",
+        "Floating",
+        "PerTagReport",
+        "AssignedToModal",
+        "QuestionPromptDisplay",
+        "VerifiedContentEntryBanner",
+        "TeacherAppreciationExploreHeader",
+        "MathEditorModal",
+        "DifferentiatedVersionsHowItWorksModal",
+        "SubtopicSelector",
+        "PassageQuestionList",
+        "CollectionsEmptyState",
+        "CollectionEmptyState",
+        "UiTable",
+        "FilterDropdown",
+        "StandardDetailsModal",
+        "ErrorState",
+        "SubsetsTableLoadingState",
+        "LearnersTableLoadingState",
+        "Toaster",
+        "MediaVideo",
+        "ByocUploadMobileView",
+        "AddFirstClass",
+        "ClassEmptyState",
+        "ClassesModals",
+        "SelectLMSModal",
+        "Dropdown",
+        "ShareAppLink",
+        "SndIcon",
+        "SuperIcon",
+        "GameOptionUISubAction",
+        "AuthNavbar",
+        "AuthGuard",
+        "ObjectionsUpdateModal",
+        "GuidelinesSection",
+        "CompactUploadContainer",
+        "EditScenarioModal",
+        "BookPdSession",
+        "FFSBenefit",
+        "UpgradeBeyondWidget",
+        "HelpAndSupportWidget",
+        "FFSCopyLinkModal",
+        "FFSUnlockedModal",
+        "NominationEducationModal",
+        "NominationAdminModal",
+        "BlockedWidget",
+        "DeadlineUpdateModal",
+        "DeleteReportModal",
+        "EndSessionModal",
+        "RenameReportModal",
+        "GroupsView",
+        "RecommendationQuestionCardAnswer",
+        "MultiClassAssignmentPaywallBanner",
+        "TimePicker",
+        "OutOfStorageModal",
+        "TeamFooter",
+        "TrendsLineChart",
+        "QuickEditQuestion",
+        "OrganizationSelector",
+        "Preferences"
+      ],
+      "variants": [],
+      "commonProps": [
+        "gap",
+        "direction",
+        "align",
+        "fullWidth",
+        "padding",
+        "v",
+        "justify",
+        "if",
+        "rounded",
+        "bgColor"
+      ],
+      "storybookStories": [
+        "Default"
+      ],
+      "path": "../wayground/frontend/packages/quizizz-ui/src/components/layouts/Flex/Flex.vue",
+      "hasStorybook": true
+    },
+    "FixedSize": {
+      "name": "FixedSize",
+      "category": "layouts",
+      "description": "FixedSize component for layouts and 1 slot",
+      "tags": [
+        "layouts/FixedSize",
+        "autodocs",
+        "composable"
+      ],
+      "relatedComponents": [
+        "Flex",
+        "Text",
+        "Box",
+        "Absolute",
+        "Button",
+        "SkeletonLoader",
+        "Divider",
+        "Toaster",
+        "Tooltip",
+        "TeamFooter",
+        "Modal",
+        "AssignCollaboratorsModal",
+        "Surface",
+        "TruncatedText",
+        "MediaSeeker"
+      ],
+      "variants": [],
+      "commonProps": [
+        "width",
+        "height",
+        "rounded",
+        "bgColor",
+        "overflow",
+        "v",
+        "padding",
+        "if",
+        "relative",
+        "border"
+      ],
+      "storybookStories": [
+        "Default"
+      ],
+      "path": "../wayground/frontend/packages/quizizz-ui/src/components/layouts/FixedSize/FixedSize.vue",
+      "hasStorybook": true
     },
     "Fixed": {
       "name": "Fixed",
@@ -234,298 +520,12 @@
         "testid",
         "fullHeight",
         "ref",
-        "id",
-        "else"
+        "else",
+        "id"
       ],
       "storybookStories": [],
       "path": "../wayground/frontend/packages/quizizz-ui/src/components/layouts/Columns/Column.vue",
       "hasStorybook": false
-    },
-    "Flex": {
-      "name": "Flex",
-      "category": "layouts",
-      "description": "Flex component for layouts and 1 slot",
-      "tags": [
-        "Layouts/Flex",
-        "autodocs",
-        "composable"
-      ],
-      "relatedComponents": [
-        "Text",
-        "Box",
-        "FixedSize",
-        "Absolute",
-        "SkeletonLoader",
-        "Button",
-        "Divider",
-        "Surface",
-        "Columns",
-        "FormSourceSelector",
-        "Icon",
-        "TextField",
-        "IconButton",
-        "Heading",
-        "Modal",
-        "Tooltip",
-        "Column",
-        "Grid",
-        "Animate",
-        "TruncatedText",
-        "Image",
-        "Scrollable",
-        "Pill",
-        "AccommodationsStudentTile",
-        "HintDisplay",
-        "InteractiveGudda",
-        "CallActionbar",
-        "PermissionGuideModal",
-        "Sticky",
-        "EmptyState",
-        "SndDashboard",
-        "TextBlock",
-        "Transition",
-        "Footer",
-        "AutoFlow",
-        "Dialog",
-        "NamespaceProvider",
-        "Fixed",
-        "AssignCollaboratorsModal",
-        "AdminReferralLeadModal",
-        "AccommodationsPreviewModal",
-        "SearchBar",
-        "Popover",
-        "ImageUploadModal",
-        "CustomSettingsBanner",
-        "PopoverContent",
-        "RoleplayAggregationTable",
-        "RoleplayAggregationMatrix",
-        "Toggle",
-        "HorizontalBarWithProgress",
-        "ShadowButton",
-        "GameSettingDivider",
-        "ProfileBadges",
-        "QuestionDetailsCardLoader",
-        "Navbar",
-        "Message",
-        "FiltersSideSheet",
-        "StandardInfoModal",
-        "PlayerEventInfoModal",
-        "SndDashboardPrint",
-        "MediaTile",
-        "AccountabilityTable",
-        "MarketingBanner",
-        "GoogleDrivePickerV2",
-        "TeacherPacedSelectionModal",
-        "Thumbnail",
-        "AutoWarnStudentsModal",
-        "SettingItem",
-        "Teleport",
-        "TextInputArea",
-        "Checkbox",
-        "PreviewOnboarding",
-        "SlideViewer",
-        "VettedBadgeWithInfoPopover",
-        "FileUpload",
-        "AddCaseLoadStudentsModal",
-        "LinkAction",
-        "ActivityDetailActions",
-        "TabGroup",
-        "UnsavedVersionsModalForAssign",
-        "CopyWithVersionsModalFromADPCopyAndEdit",
-        "PDFPreviewModal",
-        "Stack",
-        "Loading",
-        "SectionProgressLoader",
-        "SectionErrorState",
-        "RubricDisplay",
-        "ProductCardV1",
-        "ProductUpdateModal",
-        "ProductDocumentsModal",
-        "StudentPerformanceChart",
-        "PlayerDeletionWarning",
-        "StudentSelectBanner",
-        "NetworkRecommendationsInAllStudentsEditor",
-        "IntersectionObserverTrigger",
-        "StandardTags",
-        "ActivityDetailsActions",
-        "ModalManager",
-        "WorksheetCustomSettings",
-        "PassageCustomSettings",
-        "SideSheet",
-        "UploadContainerV2",
-        "NoActivitiesExistState",
-        "ListAndPreview",
-        "DOKInfoModal",
-        "ObjectionEvaluationSection",
-        "BottomSheet",
-        "BlankIndicator",
-        "PlayerInfractionCard",
-        "ProgressBar",
-        "FileDetails",
-        "QLink",
-        "BuyerMediaPlayer",
-        "ActivityTable",
-        "ProfileHeaderLoader",
-        "ScrollPanel",
-        "ReviewSection",
-        "Table",
-        "ShareResourceModal",
-        "TeleportToLayer5",
-        "TeamsCreateModal",
-        "ObjectionModalV3",
-        "IVADocumentSelectorModal",
-        "ClassAssignmentV2",
-        "CSMBranding",
-        "IntersectionTrigger",
-        "NonPilotCaseManagerDashboardBody",
-        "CaseManagersList",
-        "SelectBox",
-        "ErrorPage",
-        "LoadingState",
-        "Carousel",
-        "StandardAlignedTags",
-        "AIEnhanceSidebar",
-        "ActivityGrade",
-        "ActivityDifficultyIndicator",
-        "ActivityAuthor",
-        "DashboardSectionEmptyState",
-        "ComprehensionQuizPreview",
-        "StandardTagLabel",
-        "MaskedBlur",
-        "PlansComingSoonFeatures",
-        "GroupDetailsTabContent",
-        "ButtonV2",
-        "LDBErrorState",
-        "ChromeExtensionInstallationModal",
-        "AgendaOfRoleplayModal",
-        "GuidelinesModal",
-        "Loader",
-        "OverviewTab",
-        "UserReview",
-        "MultiSelect",
-        "Floating",
-        "PerTagReport",
-        "AssignedToModal",
-        "QuestionPromptDisplay",
-        "VerifiedContentEntryBanner",
-        "TeacherAppreciationExploreHeader",
-        "MathEditorModal",
-        "DifferentiatedVersionsHowItWorksModal",
-        "SubtopicSelector",
-        "CollectionsEmptyState",
-        "CollectionEmptyState",
-        "UiTable",
-        "PassageQuestionList",
-        "FilterDropdown",
-        "StandardDetailsModal",
-        "ErrorState",
-        "SubsetsTableLoadingState",
-        "LearnersTableLoadingState",
-        "Toaster",
-        "MediaVideo",
-        "ByocUploadMobileView",
-        "Dropdown",
-        "AddFirstClass",
-        "ClassEmptyState",
-        "ClassesModals",
-        "SelectLMSModal",
-        "AuthNavbar",
-        "ShareAppLink",
-        "SndIcon",
-        "SuperIcon",
-        "GameOptionUISubAction",
-        "AuthGuard",
-        "ObjectionsUpdateModal",
-        "GuidelinesSection",
-        "CompactUploadContainer",
-        "EditScenarioModal",
-        "BookPdSession",
-        "FFSBenefit",
-        "UpgradeBeyondWidget",
-        "HelpAndSupportWidget",
-        "FFSCopyLinkModal",
-        "FFSUnlockedModal",
-        "NominationEducationModal",
-        "NominationAdminModal",
-        "BlockedWidget",
-        "DeadlineUpdateModal",
-        "DeleteReportModal",
-        "EndSessionModal",
-        "RenameReportModal",
-        "GroupsView",
-        "RecommendationQuestionCardAnswer",
-        "MultiClassAssignmentPaywallBanner",
-        "TimePicker",
-        "OutOfStorageModal",
-        "TeamFooter",
-        "TrendsLineChart",
-        "QuickEditQuestion",
-        "OrganizationSelector",
-        "Preferences"
-      ],
-      "variants": [],
-      "commonProps": [
-        "gap",
-        "direction",
-        "align",
-        "fullWidth",
-        "padding",
-        "v",
-        "justify",
-        "if",
-        "rounded",
-        "bgColor"
-      ],
-      "storybookStories": [
-        "Default"
-      ],
-      "path": "../wayground/frontend/packages/quizizz-ui/src/components/layouts/Flex/Flex.vue",
-      "hasStorybook": true
-    },
-    "FixedSize": {
-      "name": "FixedSize",
-      "category": "layouts",
-      "description": "FixedSize component for layouts and 1 slot",
-      "tags": [
-        "layouts/FixedSize",
-        "autodocs",
-        "composable"
-      ],
-      "relatedComponents": [
-        "Flex",
-        "Text",
-        "Box",
-        "Absolute",
-        "Button",
-        "SkeletonLoader",
-        "Divider",
-        "Toaster",
-        "Tooltip",
-        "TeamFooter",
-        "Modal",
-        "AssignCollaboratorsModal",
-        "Surface",
-        "TruncatedText",
-        "MediaSeeker"
-      ],
-      "variants": [],
-      "commonProps": [
-        "width",
-        "height",
-        "rounded",
-        "bgColor",
-        "overflow",
-        "v",
-        "padding",
-        "if",
-        "relative",
-        "border"
-      ],
-      "storybookStories": [
-        "Default"
-      ],
-      "path": "../wayground/frontend/packages/quizizz-ui/src/components/layouts/FixedSize/FixedSize.vue",
-      "hasStorybook": true
     },
     "Absolute": {
       "name": "Absolute",
@@ -662,6 +662,23 @@
       "path": "../wayground/frontend/packages/quizizz-ui/src/components/primitives/TruncatedText/TruncatedText.vue",
       "hasStorybook": true
     },
+    "VisuallyHidden": {
+      "name": "VisuallyHidden",
+      "category": "primitives",
+      "description": "VisuallyHidden component for primitives and 1 slot",
+      "tags": [
+        "basic",
+        "atomic",
+        "foundation",
+        "composable"
+      ],
+      "relatedComponents": [],
+      "variants": [],
+      "commonProps": [],
+      "storybookStories": [],
+      "path": "../wayground/frontend/packages/quizizz-ui/src/components/primitives/VisuallyHidden/VisuallyHidden.vue",
+      "hasStorybook": false
+    },
     "Text": {
       "name": "Text",
       "category": "primitives",
@@ -773,6 +790,35 @@
       "path": "../wayground/frontend/packages/quizizz-ui/src/components/primitives/Surface/Surface.vue",
       "hasStorybook": true
     },
+    "MaskedBlur": {
+      "name": "MaskedBlur",
+      "category": "primitives",
+      "description": "MaskedBlur component for primitives with 2 props and 1 slot",
+      "tags": [
+        "basic",
+        "atomic",
+        "foundation",
+        "Primitives/MaskedBlur",
+        "autodocs",
+        "composable"
+      ],
+      "relatedComponents": [
+        "Flex"
+      ],
+      "variants": [],
+      "commonProps": [
+        "direction",
+        "blurStart",
+        "v",
+        "else",
+        "if"
+      ],
+      "storybookStories": [
+        "Default"
+      ],
+      "path": "../wayground/frontend/packages/quizizz-ui/src/components/primitives/MaskedBlur/MaskedBlur.vue",
+      "hasStorybook": true
+    },
     "Image": {
       "name": "Image",
       "category": "primitives",
@@ -843,35 +889,6 @@
         "Default"
       ],
       "path": "../wayground/frontend/packages/quizizz-ui/src/components/primitives/Heading/Heading.vue",
-      "hasStorybook": true
-    },
-    "MaskedBlur": {
-      "name": "MaskedBlur",
-      "category": "primitives",
-      "description": "MaskedBlur component for primitives with 2 props and 1 slot",
-      "tags": [
-        "basic",
-        "atomic",
-        "foundation",
-        "Primitives/MaskedBlur",
-        "autodocs",
-        "composable"
-      ],
-      "relatedComponents": [
-        "Flex"
-      ],
-      "variants": [],
-      "commonProps": [
-        "direction",
-        "blurStart",
-        "v",
-        "else",
-        "if"
-      ],
-      "storybookStories": [
-        "Default"
-      ],
-      "path": "../wayground/frontend/packages/quizizz-ui/src/components/primitives/MaskedBlur/MaskedBlur.vue",
       "hasStorybook": true
     },
     "Box": {
@@ -962,23 +979,6 @@
       "path": "../wayground/frontend/packages/quizizz-ui/src/components/primitives/Box/Box.vue",
       "hasStorybook": true
     },
-    "Blur": {
-      "name": "Blur",
-      "category": "primitives",
-      "description": "Blur component for primitives and 1 slot",
-      "tags": [
-        "basic",
-        "atomic",
-        "foundation",
-        "composable"
-      ],
-      "relatedComponents": [],
-      "variants": [],
-      "commonProps": [],
-      "storybookStories": [],
-      "path": "../wayground/frontend/packages/quizizz-ui/src/components/primitives/Blur/Blur.vue",
-      "hasStorybook": false
-    },
     "Animate": {
       "name": "Animate",
       "category": "primitives",
@@ -1017,10 +1017,10 @@
       "path": "../wayground/frontend/packages/quizizz-ui/src/components/primitives/Animate/Animate.vue",
       "hasStorybook": true
     },
-    "VisuallyHidden": {
-      "name": "VisuallyHidden",
+    "Blur": {
+      "name": "Blur",
       "category": "primitives",
-      "description": "VisuallyHidden component for primitives and 1 slot",
+      "description": "Blur component for primitives and 1 slot",
       "tags": [
         "basic",
         "atomic",
@@ -1031,7 +1031,7 @@
       "variants": [],
       "commonProps": [],
       "storybookStories": [],
-      "path": "../wayground/frontend/packages/quizizz-ui/src/components/primitives/VisuallyHidden/VisuallyHidden.vue",
+      "path": "../wayground/frontend/packages/quizizz-ui/src/components/primitives/Blur/Blur.vue",
       "hasStorybook": false
     },
     "TeleportWrapper": {
@@ -1344,43 +1344,6 @@
       "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/UiTable/UiTable.vue",
       "hasStorybook": true
     },
-    "Toggle": {
-      "name": "Toggle",
-      "category": "other",
-      "description": "Toggle component with 9 props",
-      "tags": [
-        "utility",
-        "misc",
-        "form",
-        "boolean",
-        "selection",
-        "ui/Toggle",
-        "autodocs",
-        "interactive"
-      ],
-      "relatedComponents": [
-        "Flex",
-        "CustomResponseController"
-      ],
-      "variants": [],
-      "commonProps": [
-        "name",
-        "ariaLabel",
-        "v",
-        "modelValue",
-        "disabled",
-        "else",
-        "dataTestid",
-        "if",
-        "ref",
-        "class"
-      ],
-      "storybookStories": [
-        "Default"
-      ],
-      "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/Toggle/Toggle.vue",
-      "hasStorybook": true
-    },
     "Tooltip": {
       "name": "Tooltip",
       "category": "other",
@@ -1423,6 +1386,43 @@
         "Default"
       ],
       "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/Tooltip/Tooltip.vue",
+      "hasStorybook": true
+    },
+    "Toggle": {
+      "name": "Toggle",
+      "category": "other",
+      "description": "Toggle component with 9 props",
+      "tags": [
+        "utility",
+        "misc",
+        "form",
+        "boolean",
+        "selection",
+        "ui/Toggle",
+        "autodocs",
+        "interactive"
+      ],
+      "relatedComponents": [
+        "Flex",
+        "CustomResponseController"
+      ],
+      "variants": [],
+      "commonProps": [
+        "name",
+        "ariaLabel",
+        "v",
+        "modelValue",
+        "disabled",
+        "else",
+        "dataTestid",
+        "if",
+        "ref",
+        "class"
+      ],
+      "storybookStories": [
+        "Default"
+      ],
+      "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/Toggle/Toggle.vue",
       "hasStorybook": true
     },
     "Toaster": {
@@ -1501,6 +1501,36 @@
         "Default"
       ],
       "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/Toast/Toast.vue",
+      "hasStorybook": true
+    },
+    "TimePicker": {
+      "name": "TimePicker",
+      "category": "other",
+      "description": "TVA styles for trigger button",
+      "tags": [
+        "utility",
+        "misc",
+        "form",
+        "selection",
+        "options",
+        "ui/TimePicker",
+        "autodocs"
+      ],
+      "relatedComponents": [
+        "Flex"
+      ],
+      "variants": [],
+      "commonProps": [
+        "v",
+        "if",
+        "disabled",
+        "value",
+        "showNowButton"
+      ],
+      "storybookStories": [
+        "Default"
+      ],
+      "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/TimePicker/TimePicker.vue",
       "hasStorybook": true
     },
     "TextInputArea": {
@@ -1625,6 +1655,34 @@
       "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/TextArea/TextArea.vue",
       "hasStorybook": false
     },
+    "Tag": {
+      "name": "Tag",
+      "category": "other",
+      "description": "Tag component with 7 props",
+      "tags": [
+        "utility",
+        "misc",
+        "label",
+        "status",
+        "metadata",
+        "ui/Tag",
+        "autodocs",
+        "interactive",
+        "customizable"
+      ],
+      "relatedComponents": [],
+      "variants": [],
+      "commonProps": [
+        "size",
+        "variant",
+        "disabled"
+      ],
+      "storybookStories": [
+        "Default"
+      ],
+      "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/Tag/Tag.vue",
+      "hasStorybook": true
+    },
     "TagInput": {
       "name": "TagInput",
       "category": "other",
@@ -1659,659 +1717,6 @@
         "Default"
       ],
       "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/TagInput/TagInput.vue",
-      "hasStorybook": true
-    },
-    "Tag": {
-      "name": "Tag",
-      "category": "other",
-      "description": "Tag component with 7 props",
-      "tags": [
-        "utility",
-        "misc",
-        "label",
-        "status",
-        "metadata",
-        "ui/Tag",
-        "autodocs",
-        "interactive",
-        "customizable"
-      ],
-      "relatedComponents": [],
-      "variants": [],
-      "commonProps": [
-        "size",
-        "variant",
-        "disabled"
-      ],
-      "storybookStories": [
-        "Default"
-      ],
-      "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/Tag/Tag.vue",
-      "hasStorybook": true
-    },
-    "TableRow": {
-      "name": "TableRow",
-      "category": "data-display",
-      "description": "TableRow component for data-display",
-      "tags": [
-        "display",
-        "content",
-        "visualization",
-        "data",
-        "collection",
-        "rows",
-        "navigation",
-        "switch",
-        "panels"
-      ],
-      "relatedComponents": [],
-      "variants": [],
-      "commonProps": [],
-      "storybookStories": [],
-      "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/Table/TableRow.vue",
-      "hasStorybook": false
-    },
-    "TableHeader": {
-      "name": "TableHeader",
-      "category": "data-display",
-      "description": "TableHeader component for data-display with 4 props",
-      "tags": [
-        "display",
-        "content",
-        "visualization",
-        "data",
-        "collection",
-        "rows",
-        "navigation",
-        "switch",
-        "panels"
-      ],
-      "relatedComponents": [],
-      "variants": [],
-      "commonProps": [
-        "headers",
-        "key",
-        "node"
-      ],
-      "storybookStories": [],
-      "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/Table/TableHeader.vue",
-      "hasStorybook": false
-    },
-    "Table": {
-      "name": "Table",
-      "category": "data-display",
-      "description": "the :key on TableHeader is required",
-      "tags": [
-        "display",
-        "content",
-        "visualization",
-        "data",
-        "collection",
-        "rows",
-        "navigation",
-        "switch",
-        "panels",
-        "ui/Table",
-        "autodocs",
-        "composable"
-      ],
-      "relatedComponents": [
-        "Flex"
-      ],
-      "variants": [
-        "GenericTable",
-        "StyledRowCells"
-      ],
-      "commonProps": [
-        "rows",
-        "columns",
-        "headerRowProps",
-        "dataTestid",
-        "v",
-        "scrollBarVisibility",
-        "fullWidth",
-        "else",
-        "maxHeightInPx",
-        "border"
-      ],
-      "storybookStories": [
-        "Default",
-        "GenericTable",
-        "StyledRowCells"
-      ],
-      "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/Table/Table.vue",
-      "hasStorybook": true
-    },
-    "Sticky": {
-      "name": "Sticky",
-      "category": "other",
-      "description": "Sticky component and 1 slot",
-      "tags": [
-        "utility",
-        "misc",
-        "layouts/Sticky",
-        "autodocs",
-        "composable"
-      ],
-      "relatedComponents": [
-        "Flex",
-        "Text",
-        "Box",
-        "TeacherPacedSelectionModal"
-      ],
-      "variants": [],
-      "commonProps": [
-        "top",
-        "bottom",
-        "left",
-        "class",
-        "v",
-        "if",
-        "right",
-        "shadow",
-        "zIndex",
-        "style"
-      ],
-      "storybookStories": [
-        "Default"
-      ],
-      "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/Sticky/Sticky.vue",
-      "hasStorybook": true
-    },
-    "Slider": {
-      "name": "Slider",
-      "category": "media",
-      "description": "seek on drag is optional since slider need not be seek bar always",
-      "tags": [
-        "image",
-        "video",
-        "audio",
-        "visual",
-        "form",
-        "range",
-        "numeric",
-        "ui/Slider",
-        "autodocs",
-        "customizable",
-        "composable"
-      ],
-      "relatedComponents": [],
-      "variants": [],
-      "commonProps": [
-        "ref",
-        "class",
-        "start",
-        "end",
-        "initialValue",
-        "orientation",
-        "trackClasses",
-        "thumbClasses"
-      ],
-      "storybookStories": [
-        "Default"
-      ],
-      "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/MediaVideoPreview/Slider.vue",
-      "hasStorybook": false
-    },
-    "SkeletonLoader": {
-      "name": "SkeletonLoader",
-      "category": "feedback",
-      "description": "SkeletonLoader component for feedback with 6 props",
-      "tags": [
-        "notification",
-        "alert",
-        "status",
-        "message",
-        "loading",
-        "progress",
-        "async",
-        "ui/SkeletonLoader",
-        "autodocs"
-      ],
-      "relatedComponents": [
-        "Flex",
-        "Text",
-        "Columns",
-        "Divider",
-        "Column",
-        "AccountabilityTable",
-        "FixedSize",
-        "Animate",
-        "Surface"
-      ],
-      "variants": [],
-      "commonProps": [
-        "width",
-        "height",
-        "rounded",
-        "v",
-        "if",
-        "loaderType",
-        "dataTestid",
-        "data",
-        "testid",
-        "else"
-      ],
-      "storybookStories": [
-        "Default"
-      ],
-      "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/SkeletonLoader/SkeletonLoader.vue",
-      "hasStorybook": true
-    },
-    "AiThemedSkeletonLoader": {
-      "name": "AiThemedSkeletonLoader",
-      "category": "feedback",
-      "description": "AiThemedSkeletonLoader component for feedback with 5 props",
-      "tags": [
-        "notification",
-        "alert",
-        "status",
-        "message",
-        "loading",
-        "progress",
-        "async"
-      ],
-      "relatedComponents": [],
-      "variants": [],
-      "commonProps": [
-        "v",
-        "else",
-        "width",
-        "height",
-        "rounded",
-        "dataTestid"
-      ],
-      "storybookStories": [],
-      "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/SkeletonLoader/AiThemedSkeletonLoader.vue",
-      "hasStorybook": false
-    },
-    "TimePicker": {
-      "name": "TimePicker",
-      "category": "other",
-      "description": "TVA styles for trigger button",
-      "tags": [
-        "utility",
-        "misc",
-        "form",
-        "selection",
-        "options",
-        "ui/TimePicker",
-        "autodocs"
-      ],
-      "relatedComponents": [
-        "Flex"
-      ],
-      "variants": [],
-      "commonProps": [
-        "v",
-        "if",
-        "disabled",
-        "value",
-        "showNowButton"
-      ],
-      "storybookStories": [
-        "Default"
-      ],
-      "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/TimePicker/TimePicker.vue",
-      "hasStorybook": true
-    },
-    "SidebarItemsRenderer": {
-      "name": "SidebarItemsRenderer",
-      "category": "layout-ui",
-      "description": "SidebarItemsRenderer component for layout-ui",
-      "tags": [
-        "container",
-        "structure",
-        "grid",
-        "spacing"
-      ],
-      "relatedComponents": [],
-      "variants": [],
-      "commonProps": [],
-      "storybookStories": [],
-      "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/Sidebar/SidebarItemsRenderer.vue",
-      "hasStorybook": false
-    },
-    "SidebarItem": {
-      "name": "SidebarItem",
-      "category": "layout-ui",
-      "description": "SidebarItem component for layout-ui with 2 props",
-      "tags": [
-        "container",
-        "structure",
-        "grid",
-        "spacing"
-      ],
-      "relatedComponents": [],
-      "variants": [],
-      "commonProps": [
-        "v",
-        "else",
-        "if",
-        "item",
-        "routeBased"
-      ],
-      "storybookStories": [],
-      "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/Sidebar/SidebarItem.vue",
-      "hasStorybook": false
-    },
-    "Sidebar": {
-      "name": "Sidebar",
-      "category": "layout-ui",
-      "description": "Sidebar component for layout-ui with 6 props and 2 slots",
-      "tags": [
-        "container",
-        "structure",
-        "grid",
-        "spacing",
-        "ui/Sidebar",
-        "autodocs",
-        "composable"
-      ],
-      "relatedComponents": [],
-      "variants": [],
-      "commonProps": [
-        "title",
-        "hasSecondaryMenu",
-        "items",
-        "openSecondaryMenu",
-        "slotId",
-        "routeBased",
-        "class",
-        "showMini"
-      ],
-      "storybookStories": [
-        "Default"
-      ],
-      "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/Sidebar/Sidebar.vue",
-      "hasStorybook": true
-    },
-    "ShadowButtonDeprecated": {
-      "name": "ShadowButtonDeprecated",
-      "category": "other",
-      "description": "ShadowButtonDeprecated component",
-      "tags": [
-        "utility",
-        "misc",
-        "action",
-        "click",
-        "interactive",
-        "cta"
-      ],
-      "relatedComponents": [],
-      "variants": [],
-      "commonProps": [
-        "v",
-        "if",
-        "bind"
-      ],
-      "storybookStories": [],
-      "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/ShadowButton/ShadowButtonDeprecated.vue",
-      "hasStorybook": false
-    },
-    "ShadowButton": {
-      "name": "ShadowButton",
-      "category": "other",
-      "description": "ShadowButton component",
-      "tags": [
-        "utility",
-        "misc",
-        "action",
-        "click",
-        "interactive",
-        "cta",
-        "ui/ShadowButton",
-        "autodocs"
-      ],
-      "relatedComponents": [
-        "Flex"
-      ],
-      "variants": [],
-      "commonProps": [
-        "title",
-        "variant",
-        "lIcon",
-        "tIcon",
-        "size"
-      ],
-      "storybookStories": [
-        "Default"
-      ],
-      "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/ShadowButton/ShadowButton.vue",
-      "hasStorybook": true
-    },
-    "SelectBox": {
-      "name": "SelectBox",
-      "category": "forms",
-      "description": "selected Item",
-      "tags": [
-        "form",
-        "input",
-        "user-input",
-        "data-entry",
-        "selection",
-        "options",
-        "ui/SelectBox",
-        "autodocs",
-        "interactive",
-        "customizable"
-      ],
-      "relatedComponents": [
-        "FA",
-        "Box",
-        "Flex",
-        "Input",
-        "Button",
-        "ConfirmPublicVisibilityModal",
-        "QfwInviteModal",
-        "Text"
-      ],
-      "variants": [],
-      "commonProps": [
-        "v",
-        "else",
-        "size",
-        "aria",
-        "label",
-        "list",
-        "class",
-        "items",
-        "placeholder",
-        "model"
-      ],
-      "storybookStories": [
-        "Default"
-      ],
-      "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/SelectBox/SelectBox.vue",
-      "hasStorybook": true
-    },
-    "SearchBar": {
-      "name": "SearchBar",
-      "category": "forms",
-      "description": "SearchBar component for forms with 13 props",
-      "tags": [
-        "form",
-        "input",
-        "user-input",
-        "data-entry",
-        "ui/SearchBar",
-        "autodocs",
-        "interactive",
-        "customizable"
-      ],
-      "relatedComponents": [
-        "Flex"
-      ],
-      "variants": [],
-      "commonProps": [
-        "placeholder",
-        "v",
-        "model",
-        "dataTestid",
-        "showClear",
-        "size",
-        "width",
-        "else",
-        "debounceTime",
-        "shrink"
-      ],
-      "storybookStories": [
-        "Default"
-      ],
-      "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/SearchBar/SearchBar.vue",
-      "hasStorybook": true
-    },
-    "SideSheet": {
-      "name": "SideSheet",
-      "category": "layout-ui",
-      "description": "SideSheet component for layout-ui with 24 props and 1 slot",
-      "tags": [
-        "container",
-        "structure",
-        "grid",
-        "spacing",
-        "ui/SideSheet",
-        "autodocs",
-        "customizable",
-        "composable"
-      ],
-      "relatedComponents": [
-        "Flex",
-        "Box"
-      ],
-      "variants": [],
-      "commonProps": [
-        "title",
-        "size",
-        "primaryCta",
-        "closeOnOverlayClick",
-        "click",
-        "hasFooter",
-        "secondaryCta",
-        "subtitle",
-        "v",
-        "if"
-      ],
-      "storybookStories": [
-        "Default"
-      ],
-      "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/SideSheet/SideSheet.vue",
-      "hasStorybook": true
-    },
-    "ScrollPanel": {
-      "name": "ScrollPanel",
-      "category": "other",
-      "description": "ScrollPanel component with 7 props and 1 slot",
-      "tags": [
-        "utility",
-        "misc",
-        "Primitives/ScrollPanel",
-        "autodocs",
-        "composable"
-      ],
-      "relatedComponents": [
-        "Flex"
-      ],
-      "variants": [],
-      "commonProps": [
-        "width",
-        "height",
-        "data",
-        "testid",
-        "padding",
-        "alwaysVisible",
-        "buttonVariant",
-        "ref",
-        "grow"
-      ],
-      "storybookStories": [
-        "Default"
-      ],
-      "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/ScrollPanel/ScrollPanel.vue",
-      "hasStorybook": true
-    },
-    "RadioGroup": {
-      "name": "RadioGroup",
-      "category": "forms",
-      "description": "RadioGroup component for forms with 2 props and 1 slot",
-      "tags": [
-        "form",
-        "input",
-        "user-input",
-        "data-entry",
-        "boolean",
-        "selection",
-        "ui/RadioGroup",
-        "autodocs",
-        "composable"
-      ],
-      "relatedComponents": [],
-      "variants": [],
-      "commonProps": [
-        "v",
-        "model",
-        "ariaLabel",
-        "name",
-        "options",
-        "selected",
-        "modelValue"
-      ],
-      "storybookStories": [
-        "Default"
-      ],
-      "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/Radio/RadioGroup.vue",
-      "hasStorybook": true
-    },
-    "Radio": {
-      "name": "Radio",
-      "category": "forms",
-      "description": "@remarks Assessment theme only supports 'lg'",
-      "tags": [
-        "form",
-        "input",
-        "user-input",
-        "data-entry",
-        "boolean",
-        "selection",
-        "ui/Radio",
-        "autodocs",
-        "interactive",
-        "customizable"
-      ],
-      "relatedComponents": [],
-      "variants": [],
-      "commonProps": [
-        "name",
-        "inputId",
-        "label",
-        "class",
-        "size",
-        "checked"
-      ],
-      "storybookStories": [
-        "Default"
-      ],
-      "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/Radio/Radio.vue",
-      "hasStorybook": true
-    },
-    "Resizable": {
-      "name": "Resizable",
-      "category": "other",
-      "description": "Resizable component with 3 props and 1 slot",
-      "tags": [
-        "utility",
-        "misc",
-        "ui/Resizable",
-        "autodocs",
-        "composable"
-      ],
-      "relatedComponents": [],
-      "variants": [],
-      "commonProps": [],
-      "storybookStories": [
-        "Default"
-      ],
-      "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/Resizable/Resizable.vue",
       "hasStorybook": true
     },
     "VerticalTabGroup": {
@@ -2483,6 +1888,601 @@
       "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/Tabs/SegmentedTab.vue",
       "hasStorybook": true
     },
+    "Sticky": {
+      "name": "Sticky",
+      "category": "other",
+      "description": "Sticky component and 1 slot",
+      "tags": [
+        "utility",
+        "misc",
+        "layouts/Sticky",
+        "autodocs",
+        "composable"
+      ],
+      "relatedComponents": [
+        "Flex",
+        "Text",
+        "Box",
+        "TeacherPacedSelectionModal"
+      ],
+      "variants": [],
+      "commonProps": [
+        "top",
+        "bottom",
+        "left",
+        "class",
+        "v",
+        "if",
+        "right",
+        "shadow",
+        "zIndex",
+        "style"
+      ],
+      "storybookStories": [
+        "Default"
+      ],
+      "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/Sticky/Sticky.vue",
+      "hasStorybook": true
+    },
+    "TableRow": {
+      "name": "TableRow",
+      "category": "data-display",
+      "description": "TableRow component for data-display",
+      "tags": [
+        "display",
+        "content",
+        "visualization",
+        "data",
+        "collection",
+        "rows",
+        "navigation",
+        "switch",
+        "panels"
+      ],
+      "relatedComponents": [],
+      "variants": [],
+      "commonProps": [],
+      "storybookStories": [],
+      "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/Table/TableRow.vue",
+      "hasStorybook": false
+    },
+    "TableHeader": {
+      "name": "TableHeader",
+      "category": "data-display",
+      "description": "TableHeader component for data-display with 4 props",
+      "tags": [
+        "display",
+        "content",
+        "visualization",
+        "data",
+        "collection",
+        "rows",
+        "navigation",
+        "switch",
+        "panels"
+      ],
+      "relatedComponents": [],
+      "variants": [],
+      "commonProps": [
+        "headers",
+        "key",
+        "node"
+      ],
+      "storybookStories": [],
+      "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/Table/TableHeader.vue",
+      "hasStorybook": false
+    },
+    "Table": {
+      "name": "Table",
+      "category": "data-display",
+      "description": "the :key on TableHeader is required",
+      "tags": [
+        "display",
+        "content",
+        "visualization",
+        "data",
+        "collection",
+        "rows",
+        "navigation",
+        "switch",
+        "panels",
+        "ui/Table",
+        "autodocs",
+        "composable"
+      ],
+      "relatedComponents": [
+        "Flex"
+      ],
+      "variants": [
+        "GenericTable",
+        "StyledRowCells"
+      ],
+      "commonProps": [
+        "rows",
+        "columns",
+        "headerRowProps",
+        "dataTestid",
+        "v",
+        "scrollBarVisibility",
+        "fullWidth",
+        "else",
+        "maxHeightInPx",
+        "border"
+      ],
+      "storybookStories": [
+        "Default",
+        "GenericTable",
+        "StyledRowCells"
+      ],
+      "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/Table/Table.vue",
+      "hasStorybook": true
+    },
+    "Slider": {
+      "name": "Slider",
+      "category": "media",
+      "description": "seek on drag is optional since slider need not be seek bar always",
+      "tags": [
+        "image",
+        "video",
+        "audio",
+        "visual",
+        "form",
+        "range",
+        "numeric",
+        "ui/Slider",
+        "autodocs",
+        "customizable",
+        "composable"
+      ],
+      "relatedComponents": [],
+      "variants": [],
+      "commonProps": [
+        "ref",
+        "class",
+        "start",
+        "end",
+        "initialValue",
+        "orientation",
+        "trackClasses",
+        "thumbClasses"
+      ],
+      "storybookStories": [
+        "Default"
+      ],
+      "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/MediaVideoPreview/Slider.vue",
+      "hasStorybook": false
+    },
+    "SkeletonLoader": {
+      "name": "SkeletonLoader",
+      "category": "feedback",
+      "description": "SkeletonLoader component for feedback with 6 props",
+      "tags": [
+        "notification",
+        "alert",
+        "status",
+        "message",
+        "loading",
+        "progress",
+        "async",
+        "ui/SkeletonLoader",
+        "autodocs"
+      ],
+      "relatedComponents": [
+        "Flex",
+        "Text",
+        "Columns",
+        "Divider",
+        "Column",
+        "AccountabilityTable",
+        "FixedSize",
+        "Animate",
+        "Surface"
+      ],
+      "variants": [],
+      "commonProps": [
+        "width",
+        "height",
+        "rounded",
+        "v",
+        "if",
+        "loaderType",
+        "dataTestid",
+        "data",
+        "testid",
+        "else"
+      ],
+      "storybookStories": [
+        "Default"
+      ],
+      "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/SkeletonLoader/SkeletonLoader.vue",
+      "hasStorybook": true
+    },
+    "AiThemedSkeletonLoader": {
+      "name": "AiThemedSkeletonLoader",
+      "category": "feedback",
+      "description": "AiThemedSkeletonLoader component for feedback with 5 props",
+      "tags": [
+        "notification",
+        "alert",
+        "status",
+        "message",
+        "loading",
+        "progress",
+        "async"
+      ],
+      "relatedComponents": [],
+      "variants": [],
+      "commonProps": [
+        "v",
+        "else",
+        "width",
+        "height",
+        "rounded",
+        "dataTestid"
+      ],
+      "storybookStories": [],
+      "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/SkeletonLoader/AiThemedSkeletonLoader.vue",
+      "hasStorybook": false
+    },
+    "SidebarItemsRenderer": {
+      "name": "SidebarItemsRenderer",
+      "category": "layout-ui",
+      "description": "SidebarItemsRenderer component for layout-ui",
+      "tags": [
+        "container",
+        "structure",
+        "grid",
+        "spacing"
+      ],
+      "relatedComponents": [],
+      "variants": [],
+      "commonProps": [],
+      "storybookStories": [],
+      "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/Sidebar/SidebarItemsRenderer.vue",
+      "hasStorybook": false
+    },
+    "SidebarItem": {
+      "name": "SidebarItem",
+      "category": "layout-ui",
+      "description": "SidebarItem component for layout-ui with 2 props",
+      "tags": [
+        "container",
+        "structure",
+        "grid",
+        "spacing"
+      ],
+      "relatedComponents": [],
+      "variants": [],
+      "commonProps": [
+        "v",
+        "else",
+        "if",
+        "item",
+        "routeBased"
+      ],
+      "storybookStories": [],
+      "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/Sidebar/SidebarItem.vue",
+      "hasStorybook": false
+    },
+    "Sidebar": {
+      "name": "Sidebar",
+      "category": "layout-ui",
+      "description": "Sidebar component for layout-ui with 6 props and 2 slots",
+      "tags": [
+        "container",
+        "structure",
+        "grid",
+        "spacing",
+        "ui/Sidebar",
+        "autodocs",
+        "composable"
+      ],
+      "relatedComponents": [],
+      "variants": [],
+      "commonProps": [
+        "title",
+        "hasSecondaryMenu",
+        "items",
+        "openSecondaryMenu",
+        "slotId",
+        "routeBased",
+        "class",
+        "showMini"
+      ],
+      "storybookStories": [
+        "Default"
+      ],
+      "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/Sidebar/Sidebar.vue",
+      "hasStorybook": true
+    },
+    "SideSheet": {
+      "name": "SideSheet",
+      "category": "layout-ui",
+      "description": "SideSheet component for layout-ui with 24 props and 1 slot",
+      "tags": [
+        "container",
+        "structure",
+        "grid",
+        "spacing",
+        "ui/SideSheet",
+        "autodocs",
+        "customizable",
+        "composable"
+      ],
+      "relatedComponents": [
+        "Flex",
+        "Box"
+      ],
+      "variants": [],
+      "commonProps": [
+        "title",
+        "size",
+        "primaryCta",
+        "closeOnOverlayClick",
+        "click",
+        "hasFooter",
+        "secondaryCta",
+        "subtitle",
+        "v",
+        "if"
+      ],
+      "storybookStories": [
+        "Default"
+      ],
+      "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/SideSheet/SideSheet.vue",
+      "hasStorybook": true
+    },
+    "ShadowButtonDeprecated": {
+      "name": "ShadowButtonDeprecated",
+      "category": "other",
+      "description": "ShadowButtonDeprecated component",
+      "tags": [
+        "utility",
+        "misc",
+        "action",
+        "click",
+        "interactive",
+        "cta"
+      ],
+      "relatedComponents": [],
+      "variants": [],
+      "commonProps": [
+        "v",
+        "if",
+        "bind"
+      ],
+      "storybookStories": [],
+      "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/ShadowButton/ShadowButtonDeprecated.vue",
+      "hasStorybook": false
+    },
+    "ShadowButton": {
+      "name": "ShadowButton",
+      "category": "other",
+      "description": "ShadowButton component",
+      "tags": [
+        "utility",
+        "misc",
+        "action",
+        "click",
+        "interactive",
+        "cta",
+        "ui/ShadowButton",
+        "autodocs"
+      ],
+      "relatedComponents": [
+        "Flex"
+      ],
+      "variants": [],
+      "commonProps": [
+        "title",
+        "variant",
+        "lIcon",
+        "tIcon",
+        "size"
+      ],
+      "storybookStories": [
+        "Default"
+      ],
+      "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/ShadowButton/ShadowButton.vue",
+      "hasStorybook": true
+    },
+    "SearchBar": {
+      "name": "SearchBar",
+      "category": "forms",
+      "description": "SearchBar component for forms with 13 props",
+      "tags": [
+        "form",
+        "input",
+        "user-input",
+        "data-entry",
+        "ui/SearchBar",
+        "autodocs",
+        "interactive",
+        "customizable"
+      ],
+      "relatedComponents": [
+        "Flex"
+      ],
+      "variants": [],
+      "commonProps": [
+        "placeholder",
+        "v",
+        "model",
+        "dataTestid",
+        "showClear",
+        "size",
+        "width",
+        "else",
+        "debounceTime",
+        "shrink"
+      ],
+      "storybookStories": [
+        "Default"
+      ],
+      "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/SearchBar/SearchBar.vue",
+      "hasStorybook": true
+    },
+    "SelectBox": {
+      "name": "SelectBox",
+      "category": "forms",
+      "description": "selected Item",
+      "tags": [
+        "form",
+        "input",
+        "user-input",
+        "data-entry",
+        "selection",
+        "options",
+        "ui/SelectBox",
+        "autodocs",
+        "interactive",
+        "customizable"
+      ],
+      "relatedComponents": [
+        "FA",
+        "Box",
+        "Flex",
+        "Input",
+        "Button",
+        "ConfirmPublicVisibilityModal",
+        "QfwInviteModal",
+        "Text"
+      ],
+      "variants": [],
+      "commonProps": [
+        "v",
+        "else",
+        "size",
+        "aria",
+        "label",
+        "list",
+        "class",
+        "items",
+        "placeholder",
+        "model"
+      ],
+      "storybookStories": [
+        "Default"
+      ],
+      "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/SelectBox/SelectBox.vue",
+      "hasStorybook": true
+    },
+    "ScrollPanel": {
+      "name": "ScrollPanel",
+      "category": "other",
+      "description": "ScrollPanel component with 7 props and 1 slot",
+      "tags": [
+        "utility",
+        "misc",
+        "Primitives/ScrollPanel",
+        "autodocs",
+        "composable"
+      ],
+      "relatedComponents": [
+        "Flex"
+      ],
+      "variants": [],
+      "commonProps": [
+        "width",
+        "height",
+        "data",
+        "testid",
+        "padding",
+        "alwaysVisible",
+        "buttonVariant",
+        "ref",
+        "grow"
+      ],
+      "storybookStories": [
+        "Default"
+      ],
+      "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/ScrollPanel/ScrollPanel.vue",
+      "hasStorybook": true
+    },
+    "RadioGroup": {
+      "name": "RadioGroup",
+      "category": "forms",
+      "description": "RadioGroup component for forms with 2 props and 1 slot",
+      "tags": [
+        "form",
+        "input",
+        "user-input",
+        "data-entry",
+        "boolean",
+        "selection",
+        "ui/RadioGroup",
+        "autodocs",
+        "composable"
+      ],
+      "relatedComponents": [],
+      "variants": [],
+      "commonProps": [
+        "v",
+        "model",
+        "ariaLabel",
+        "name",
+        "options",
+        "selected",
+        "modelValue"
+      ],
+      "storybookStories": [
+        "Default"
+      ],
+      "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/Radio/RadioGroup.vue",
+      "hasStorybook": true
+    },
+    "Radio": {
+      "name": "Radio",
+      "category": "forms",
+      "description": "@remarks Assessment theme only supports 'lg'",
+      "tags": [
+        "form",
+        "input",
+        "user-input",
+        "data-entry",
+        "boolean",
+        "selection",
+        "ui/Radio",
+        "autodocs",
+        "interactive",
+        "customizable"
+      ],
+      "relatedComponents": [],
+      "variants": [],
+      "commonProps": [
+        "name",
+        "inputId",
+        "label",
+        "class",
+        "size",
+        "checked"
+      ],
+      "storybookStories": [
+        "Default"
+      ],
+      "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/Radio/Radio.vue",
+      "hasStorybook": true
+    },
+    "Resizable": {
+      "name": "Resizable",
+      "category": "other",
+      "description": "Resizable component with 3 props and 1 slot",
+      "tags": [
+        "utility",
+        "misc",
+        "ui/Resizable",
+        "autodocs",
+        "composable"
+      ],
+      "relatedComponents": [],
+      "variants": [],
+      "commonProps": [],
+      "storybookStories": [
+        "Default"
+      ],
+      "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/Resizable/Resizable.vue",
+      "hasStorybook": true
+    },
     "QuestionTypeIndicator": {
       "name": "QuestionTypeIndicator",
       "category": "other",
@@ -2543,6 +2543,35 @@
         "Default"
       ],
       "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/ProgressBar/ProgressBar.vue",
+      "hasStorybook": true
+    },
+    "PremiumIcon": {
+      "name": "PremiumIcon",
+      "category": "other",
+      "description": "PremiumIcon component with 3 props",
+      "tags": [
+        "utility",
+        "misc",
+        "visual",
+        "symbol",
+        "graphic",
+        "ui/PremiumIcon",
+        "autodocs",
+        "customizable"
+      ],
+      "relatedComponents": [],
+      "variants": [],
+      "commonProps": [
+        "v",
+        "size",
+        "variant",
+        "if",
+        "else"
+      ],
+      "storybookStories": [
+        "Default"
+      ],
+      "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/PremiumIcon/PremiumIcon.vue",
       "hasStorybook": true
     },
     "PopoverTrigger": {
@@ -2627,35 +2656,6 @@
       "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/Popover/Popover.vue",
       "hasStorybook": true
     },
-    "PremiumIcon": {
-      "name": "PremiumIcon",
-      "category": "other",
-      "description": "PremiumIcon component with 3 props",
-      "tags": [
-        "utility",
-        "misc",
-        "visual",
-        "symbol",
-        "graphic",
-        "ui/PremiumIcon",
-        "autodocs",
-        "customizable"
-      ],
-      "relatedComponents": [],
-      "variants": [],
-      "commonProps": [
-        "v",
-        "size",
-        "variant",
-        "if",
-        "else"
-      ],
-      "storybookStories": [
-        "Default"
-      ],
-      "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/PremiumIcon/PremiumIcon.vue",
-      "hasStorybook": true
-    },
     "Pill": {
       "name": "Pill",
       "category": "other",
@@ -2709,37 +2709,6 @@
       "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/PassageReader/PassageReader.vue",
       "hasStorybook": true
     },
-    "PageTitle": {
-      "name": "PageTitle",
-      "category": "other",
-      "description": "PageTitle component with 9 props and 1 slot",
-      "tags": [
-        "utility",
-        "misc",
-        "Primitives/PageTitle",
-        "autodocs",
-        "composable"
-      ],
-      "relatedComponents": [],
-      "variants": [],
-      "commonProps": [
-        "title",
-        "breadcrumb",
-        "dataTestid",
-        "subtitle",
-        "hasTraySlot",
-        "click",
-        "button3Title",
-        "hasPadding",
-        "button1Title",
-        "button1Variant"
-      ],
-      "storybookStories": [
-        "Default"
-      ],
-      "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/PageTitle/PageTitle.vue",
-      "hasStorybook": true
-    },
     "TruncatedPassagePreview": {
       "name": "TruncatedPassagePreview",
       "category": "other",
@@ -2786,6 +2755,100 @@
       "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/PassagePreview/PassagePreviewModal.vue",
       "hasStorybook": false
     },
+    "SimplePagination": {
+      "name": "SimplePagination",
+      "category": "navigation",
+      "description": "SimplePagination component for navigation",
+      "tags": [
+        "nav",
+        "menu",
+        "routing",
+        "links",
+        "navigation",
+        "pages",
+        "data",
+        "ui/SimplePagination",
+        "autodocs"
+      ],
+      "relatedComponents": [],
+      "variants": [
+        "IndefinitePagination"
+      ],
+      "commonProps": [],
+      "storybookStories": [
+        "Default",
+        "IndefinitePagination"
+      ],
+      "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/Pagination/SimplePagination.vue",
+      "hasStorybook": true
+    },
+    "Pagination": {
+      "name": "Pagination",
+      "category": "navigation",
+      "description": "Pagination component for navigation",
+      "tags": [
+        "nav",
+        "menu",
+        "routing",
+        "links",
+        "navigation",
+        "pages",
+        "data",
+        "ui/Pagination",
+        "autodocs"
+      ],
+      "relatedComponents": [],
+      "variants": [
+        "FixedLengthPagination"
+      ],
+      "commonProps": [
+        "v",
+        "if",
+        "pageNumber",
+        "totalEntities",
+        "isLoading",
+        "pageSize",
+        "startingPageIndex",
+        "class"
+      ],
+      "storybookStories": [
+        "Default",
+        "FixedLengthPagination"
+      ],
+      "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/Pagination/Pagination.vue",
+      "hasStorybook": true
+    },
+    "PageTitle": {
+      "name": "PageTitle",
+      "category": "other",
+      "description": "PageTitle component with 9 props and 1 slot",
+      "tags": [
+        "utility",
+        "misc",
+        "Primitives/PageTitle",
+        "autodocs",
+        "composable"
+      ],
+      "relatedComponents": [],
+      "variants": [],
+      "commonProps": [
+        "title",
+        "breadcrumb",
+        "dataTestid",
+        "subtitle",
+        "hasTraySlot",
+        "click",
+        "button3Title",
+        "hasPadding",
+        "button1Title",
+        "button1Variant"
+      ],
+      "storybookStories": [
+        "Default"
+      ],
+      "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/PageTitle/PageTitle.vue",
+      "hasStorybook": true
+    },
     "PDFDisplay": {
       "name": "PDFDisplay",
       "category": "other",
@@ -2800,21 +2863,6 @@
       "storybookStories": [],
       "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/PDFDisplay/PDFDisplay.vue",
       "hasStorybook": true
-    },
-    "OptionLabel": {
-      "name": "OptionLabel",
-      "category": "other",
-      "description": "OptionLabel component",
-      "tags": [
-        "utility",
-        "misc"
-      ],
-      "relatedComponents": [],
-      "variants": [],
-      "commonProps": [],
-      "storybookStories": [],
-      "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/OptionLabel/OptionLabel.vue",
-      "hasStorybook": false
     },
     "OnboardingPopover": {
       "name": "OnboardingPopover",
@@ -2848,6 +2896,87 @@
         "Default"
       ],
       "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/OnboardingPopover/OnboardingPopover.vue",
+      "hasStorybook": true
+    },
+    "OptionLabel": {
+      "name": "OptionLabel",
+      "category": "other",
+      "description": "OptionLabel component",
+      "tags": [
+        "utility",
+        "misc"
+      ],
+      "relatedComponents": [],
+      "variants": [],
+      "commonProps": [],
+      "storybookStories": [],
+      "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/OptionLabel/OptionLabel.vue",
+      "hasStorybook": false
+    },
+    "MultiSelectTag": {
+      "name": "MultiSelectTag",
+      "category": "other",
+      "description": "Remove item from selected list",
+      "tags": [
+        "utility",
+        "misc",
+        "form",
+        "selection",
+        "options",
+        "label",
+        "status",
+        "metadata",
+        "ui/MultiSelectTag",
+        "autodocs",
+        "interactive",
+        "customizable"
+      ],
+      "relatedComponents": [],
+      "variants": [],
+      "commonProps": [
+        "v",
+        "bind",
+        "modelValue"
+      ],
+      "storybookStories": [
+        "Default"
+      ],
+      "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/MultiSelectTag/MultiSelectTag.vue",
+      "hasStorybook": true
+    },
+    "MultiSelectDropdown": {
+      "name": "MultiSelectDropdown",
+      "category": "input",
+      "description": "Remove item from selected list",
+      "tags": [
+        "form",
+        "input",
+        "user-input",
+        "interactive",
+        "selection",
+        "options",
+        "ui/MultiSelectDropdown",
+        "autodocs",
+        "customizable"
+      ],
+      "relatedComponents": [],
+      "variants": [],
+      "commonProps": [
+        "modelValue",
+        "items",
+        "title",
+        "pill",
+        "menuWidth",
+        "data",
+        "testid",
+        "size",
+        "teleportToLayer3",
+        "model"
+      ],
+      "storybookStories": [
+        "Default"
+      ],
+      "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/MultiSelectDropdown/MultiSelectDropdown.vue",
       "hasStorybook": true
     },
     "TableOfContent": {
@@ -2960,72 +3089,6 @@
       "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/Navigation/MainNavigation.vue",
       "hasStorybook": true
     },
-    "MultiSelectTag": {
-      "name": "MultiSelectTag",
-      "category": "other",
-      "description": "Remove item from selected list",
-      "tags": [
-        "utility",
-        "misc",
-        "form",
-        "selection",
-        "options",
-        "label",
-        "status",
-        "metadata",
-        "ui/MultiSelectTag",
-        "autodocs",
-        "interactive",
-        "customizable"
-      ],
-      "relatedComponents": [],
-      "variants": [],
-      "commonProps": [
-        "v",
-        "bind",
-        "modelValue"
-      ],
-      "storybookStories": [
-        "Default"
-      ],
-      "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/MultiSelectTag/MultiSelectTag.vue",
-      "hasStorybook": true
-    },
-    "MultiSelectDropdown": {
-      "name": "MultiSelectDropdown",
-      "category": "input",
-      "description": "Remove item from selected list",
-      "tags": [
-        "form",
-        "input",
-        "user-input",
-        "interactive",
-        "selection",
-        "options",
-        "ui/MultiSelectDropdown",
-        "autodocs",
-        "customizable"
-      ],
-      "relatedComponents": [],
-      "variants": [],
-      "commonProps": [
-        "modelValue",
-        "items",
-        "title",
-        "pill",
-        "menuWidth",
-        "data",
-        "testid",
-        "size",
-        "teleportToLayer3",
-        "model"
-      ],
-      "storybookStories": [
-        "Default"
-      ],
-      "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/MultiSelectDropdown/MultiSelectDropdown.vue",
-      "hasStorybook": true
-    },
     "Modal": {
       "name": "Modal",
       "category": "feedback",
@@ -3077,8 +3140,8 @@
         "size",
         "subtitle",
         "icon",
-        "primaryCta",
         "v",
+        "primaryCta",
         "hasCloseButton",
         "if",
         "hasSecondaryCta"
@@ -3123,71 +3186,6 @@
       ],
       "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/Message/Message.vue",
       "hasStorybook": true
-    },
-    "MilestoneMarker": {
-      "name": "MilestoneMarker",
-      "category": "media",
-      "description": "MilestoneMarker component for media",
-      "tags": [
-        "image",
-        "video",
-        "audio",
-        "visual"
-      ],
-      "relatedComponents": [],
-      "variants": [],
-      "commonProps": [],
-      "storybookStories": [],
-      "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/MediaVideoPreview/MilestoneMarker.vue",
-      "hasStorybook": false
-    },
-    "MediaVideoPreview": {
-      "name": "MediaVideoPreview",
-      "category": "media",
-      "description": "www.googleapis.com/drive/v3/files/${props.videoId}?alt=media&key=${import.meta.env.VITE_GOOGLE_API_KEY}`;",
-      "tags": [
-        "image",
-        "video",
-        "audio",
-        "visual",
-        "composable"
-      ],
-      "relatedComponents": [],
-      "variants": [],
-      "commonProps": [],
-      "storybookStories": [],
-      "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/MediaVideoPreview/MediaVideoPreview.vue",
-      "hasStorybook": false
-    },
-    "MediaSeeker": {
-      "name": "MediaSeeker",
-      "category": "media",
-      "description": "5% of total duration",
-      "tags": [
-        "image",
-        "video",
-        "audio",
-        "visual"
-      ],
-      "relatedComponents": [
-        "FixedSize"
-      ],
-      "variants": [],
-      "commonProps": [
-        "isPlaying",
-        "seekTime",
-        "duration",
-        "markers",
-        "provider",
-        "volume",
-        "v",
-        "if",
-        "class",
-        "readonlySeeker"
-      ],
-      "storybookStories": [],
-      "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/MediaVideo/MediaSeeker.vue",
-      "hasStorybook": false
     },
     "MenuItem": {
       "name": "MenuItem",
@@ -3269,6 +3267,98 @@
       "storybookStories": [],
       "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/Menu/List.vue",
       "hasStorybook": false
+    },
+    "MilestoneMarker": {
+      "name": "MilestoneMarker",
+      "category": "media",
+      "description": "MilestoneMarker component for media",
+      "tags": [
+        "image",
+        "video",
+        "audio",
+        "visual"
+      ],
+      "relatedComponents": [],
+      "variants": [],
+      "commonProps": [],
+      "storybookStories": [],
+      "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/MediaVideoPreview/MilestoneMarker.vue",
+      "hasStorybook": false
+    },
+    "MediaVideoPreview": {
+      "name": "MediaVideoPreview",
+      "category": "media",
+      "description": "www.googleapis.com/drive/v3/files/${props.videoId}?alt=media&key=${import.meta.env.VITE_GOOGLE_API_KEY}`;",
+      "tags": [
+        "image",
+        "video",
+        "audio",
+        "visual",
+        "composable"
+      ],
+      "relatedComponents": [],
+      "variants": [],
+      "commonProps": [],
+      "storybookStories": [],
+      "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/MediaVideoPreview/MediaVideoPreview.vue",
+      "hasStorybook": false
+    },
+    "MediaSeeker": {
+      "name": "MediaSeeker",
+      "category": "media",
+      "description": "5% of total duration",
+      "tags": [
+        "image",
+        "video",
+        "audio",
+        "visual"
+      ],
+      "relatedComponents": [
+        "FixedSize"
+      ],
+      "variants": [],
+      "commonProps": [
+        "isPlaying",
+        "seekTime",
+        "duration",
+        "markers",
+        "provider",
+        "volume",
+        "v",
+        "if",
+        "class",
+        "readonlySeeker"
+      ],
+      "storybookStories": [],
+      "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/MediaVideo/MediaSeeker.vue",
+      "hasStorybook": false
+    },
+    "MediaAudio": {
+      "name": "MediaAudio",
+      "category": "other",
+      "description": "MediaAudio component with 2 props",
+      "tags": [
+        "utility",
+        "misc",
+        "ui/MediaAudio",
+        "autodocs",
+        "customizable"
+      ],
+      "relatedComponents": [],
+      "variants": [],
+      "commonProps": [
+        "v",
+        "if",
+        "src",
+        "class",
+        "size",
+        "alt"
+      ],
+      "storybookStories": [
+        "Default"
+      ],
+      "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/MediaAudio/MediaAudio.vue",
+      "hasStorybook": true
     },
     "YoutubeVideo": {
       "name": "YoutubeVideo",
@@ -3409,32 +3499,21 @@
       "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/MediaVideo/BoclipsVideo.vue",
       "hasStorybook": false
     },
-    "MediaAudio": {
-      "name": "MediaAudio",
+    "LightBox": {
+      "name": "LightBox",
       "category": "other",
-      "description": "MediaAudio component with 2 props",
+      "description": "LightBox component with 3 props and 1 slot",
       "tags": [
         "utility",
         "misc",
-        "ui/MediaAudio",
-        "autodocs",
-        "customizable"
+        "composable"
       ],
       "relatedComponents": [],
       "variants": [],
-      "commonProps": [
-        "v",
-        "if",
-        "src",
-        "class",
-        "size",
-        "alt"
-      ],
-      "storybookStories": [
-        "Default"
-      ],
-      "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/MediaAudio/MediaAudio.vue",
-      "hasStorybook": true
+      "commonProps": [],
+      "storybookStories": [],
+      "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/LightBox/LightBox.vue",
+      "hasStorybook": false
     },
     "LinkAction": {
       "name": "LinkAction",
@@ -3466,22 +3545,6 @@
       ],
       "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/LinkAction/LinkAction.vue",
       "hasStorybook": true
-    },
-    "LightBox": {
-      "name": "LightBox",
-      "category": "other",
-      "description": "LightBox component with 3 props and 1 slot",
-      "tags": [
-        "utility",
-        "misc",
-        "composable"
-      ],
-      "relatedComponents": [],
-      "variants": [],
-      "commonProps": [],
-      "storybookStories": [],
-      "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/LightBox/LightBox.vue",
-      "hasStorybook": false
     },
     "ItemOverflow": {
       "name": "ItemOverflow",
@@ -3538,49 +3601,6 @@
       "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/IconDropdown/IconDropdown.vue",
       "hasStorybook": true
     },
-    "Icon": {
-      "name": "Icon",
-      "category": "data-display",
-      "description": "Immersive icons follow a different naming convention",
-      "tags": [
-        "display",
-        "content",
-        "visualization",
-        "data",
-        "visual",
-        "symbol",
-        "graphic",
-        "ui/Icon",
-        "autodocs",
-        "customizable"
-      ],
-      "relatedComponents": [
-        "Flex",
-        "Text",
-        "Animate",
-        "PopoverContent",
-        "Modal",
-        "Surface"
-      ],
-      "variants": [],
-      "commonProps": [
-        "name",
-        "size",
-        "color",
-        "v",
-        "if",
-        "type",
-        "animate",
-        "else",
-        "dataTestid",
-        "data"
-      ],
-      "storybookStories": [
-        "Default"
-      ],
-      "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/Icon/Icon.vue",
-      "hasStorybook": true
-    },
     "IconButton": {
       "name": "IconButton",
       "category": "other",
@@ -3623,6 +3643,49 @@
         "Default"
       ],
       "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/IconButton/IconButton.vue",
+      "hasStorybook": true
+    },
+    "Icon": {
+      "name": "Icon",
+      "category": "data-display",
+      "description": "Immersive icons follow a different naming convention",
+      "tags": [
+        "display",
+        "content",
+        "visualization",
+        "data",
+        "visual",
+        "symbol",
+        "graphic",
+        "ui/Icon",
+        "autodocs",
+        "customizable"
+      ],
+      "relatedComponents": [
+        "Flex",
+        "Text",
+        "Animate",
+        "PopoverContent",
+        "Modal",
+        "Surface"
+      ],
+      "variants": [],
+      "commonProps": [
+        "name",
+        "size",
+        "color",
+        "v",
+        "if",
+        "type",
+        "animate",
+        "else",
+        "dataTestid",
+        "data"
+      ],
+      "storybookStories": [
+        "Default"
+      ],
+      "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/Icon/Icon.vue",
       "hasStorybook": true
     },
     "SearchHeader": {
@@ -3698,6 +3761,63 @@
       ],
       "storybookStories": [],
       "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/FontAwesomeIcon/FontAwesomeIcon.vue",
+      "hasStorybook": false
+    },
+    "ExploreTabs": {
+      "name": "ExploreTabs",
+      "category": "other",
+      "description": "ExploreTabs component with 7 props",
+      "tags": [
+        "utility",
+        "misc",
+        "navigation",
+        "switch",
+        "panels",
+        "ui/ExploreTabs",
+        "autodocs",
+        "interactive"
+      ],
+      "relatedComponents": [],
+      "variants": [],
+      "commonProps": [
+        "tabs",
+        "id",
+        "title",
+        "subtitle",
+        "icon",
+        "disabled"
+      ],
+      "storybookStories": [
+        "Default"
+      ],
+      "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/ExploreTabs/ExploreTabs.vue",
+      "hasStorybook": true
+    },
+    "ExploreTab": {
+      "name": "ExploreTab",
+      "category": "other",
+      "description": "ExploreTab component with 8 props",
+      "tags": [
+        "utility",
+        "misc",
+        "navigation",
+        "switch",
+        "panels",
+        "interactive",
+        "customizable"
+      ],
+      "relatedComponents": [],
+      "variants": [],
+      "commonProps": [
+        "id",
+        "title",
+        "subtitle",
+        "icon",
+        "variant",
+        "disabled"
+      ],
+      "storybookStories": [],
+      "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/ExploreTabs/ExploreTab.vue",
       "hasStorybook": false
     },
     "EditableTableRow": {
@@ -3819,6 +3939,45 @@
       "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/Dropdown/Dropdown.vue",
       "hasStorybook": true
     },
+    "Dialog": {
+      "name": "Dialog",
+      "category": "feedback",
+      "description": "Dialog component for feedback with 22 props",
+      "tags": [
+        "notification",
+        "alert",
+        "status",
+        "message",
+        "overlay",
+        "dialog",
+        "interruption",
+        "ui/Dialog",
+        "autodocs",
+        "customizable"
+      ],
+      "relatedComponents": [
+        "Flex",
+        "Box"
+      ],
+      "variants": [],
+      "commonProps": [
+        "click",
+        "v",
+        "title",
+        "subtitle",
+        "ctaTitle",
+        "secondaryCtaTitle",
+        "hasSecondaryCta",
+        "variant",
+        "icon",
+        "if"
+      ],
+      "storybookStories": [
+        "Default"
+      ],
+      "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/Dialog/Dialog.vue",
+      "hasStorybook": true
+    },
     "Divider": {
       "name": "Divider",
       "category": "other",
@@ -3871,45 +4030,6 @@
         "Default"
       ],
       "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/Divider/Divider.vue",
-      "hasStorybook": true
-    },
-    "Dialog": {
-      "name": "Dialog",
-      "category": "feedback",
-      "description": "Dialog component for feedback with 22 props",
-      "tags": [
-        "notification",
-        "alert",
-        "status",
-        "message",
-        "overlay",
-        "dialog",
-        "interruption",
-        "ui/Dialog",
-        "autodocs",
-        "customizable"
-      ],
-      "relatedComponents": [
-        "Flex",
-        "Box"
-      ],
-      "variants": [],
-      "commonProps": [
-        "click",
-        "v",
-        "title",
-        "subtitle",
-        "ctaTitle",
-        "secondaryCtaTitle",
-        "hasSecondaryCta",
-        "variant",
-        "icon",
-        "if"
-      ],
-      "storybookStories": [
-        "Default"
-      ],
-      "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/Dialog/Dialog.vue",
       "hasStorybook": true
     },
     "DateRangePicker": {
@@ -4049,6 +4169,64 @@
       "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/DateInput/Calendar.vue",
       "hasStorybook": true
     },
+    "ContentTagComponent": {
+      "name": "ContentTagComponent",
+      "category": "other",
+      "description": "Using a type mapping to define the correct element type based on the 'as' prop",
+      "tags": [
+        "utility",
+        "misc",
+        "label",
+        "status",
+        "metadata",
+        "composable"
+      ],
+      "relatedComponents": [],
+      "variants": [],
+      "commonProps": [
+        "as",
+        "class",
+        "dataTestid",
+        "ref",
+        "style",
+        "id"
+      ],
+      "storybookStories": [],
+      "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/ContentTagComponent/ContentTagComponent.vue",
+      "hasStorybook": false
+    },
+    "CircularProgress": {
+      "name": "CircularProgress",
+      "category": "feedback",
+      "description": "add validation for props",
+      "tags": [
+        "notification",
+        "alert",
+        "status",
+        "message",
+        "completion",
+        "loading",
+        "ui/CircularProgress",
+        "autodocs"
+      ],
+      "relatedComponents": [],
+      "variants": [],
+      "commonProps": [
+        "percentComplete",
+        "text",
+        "v",
+        "bind",
+        "loaderPercentage",
+        "size",
+        "showPercentWithProgress",
+        "strokeVariant"
+      ],
+      "storybookStories": [
+        "Default"
+      ],
+      "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/CircularProgress/CircularProgress.vue",
+      "hasStorybook": true
+    },
     "DataTableRow": {
       "name": "DataTableRow",
       "category": "data-display",
@@ -4174,93 +4352,6 @@
       "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/DataTable/DataTable.vue",
       "hasStorybook": true
     },
-    "ContentTagComponent": {
-      "name": "ContentTagComponent",
-      "category": "other",
-      "description": "Using a type mapping to define the correct element type based on the 'as' prop",
-      "tags": [
-        "utility",
-        "misc",
-        "label",
-        "status",
-        "metadata",
-        "composable"
-      ],
-      "relatedComponents": [],
-      "variants": [],
-      "commonProps": [
-        "as",
-        "class",
-        "dataTestid",
-        "ref",
-        "style",
-        "id"
-      ],
-      "storybookStories": [],
-      "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/ContentTagComponent/ContentTagComponent.vue",
-      "hasStorybook": false
-    },
-    "CircularProgress": {
-      "name": "CircularProgress",
-      "category": "feedback",
-      "description": "add validation for props",
-      "tags": [
-        "notification",
-        "alert",
-        "status",
-        "message",
-        "completion",
-        "loading",
-        "ui/CircularProgress",
-        "autodocs"
-      ],
-      "relatedComponents": [],
-      "variants": [],
-      "commonProps": [
-        "percentComplete",
-        "text",
-        "v",
-        "bind",
-        "loaderPercentage",
-        "size",
-        "showPercentWithProgress",
-        "strokeVariant"
-      ],
-      "storybookStories": [
-        "Default"
-      ],
-      "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/CircularProgress/CircularProgress.vue",
-      "hasStorybook": true
-    },
-    "Chip": {
-      "name": "Chip",
-      "category": "data-display",
-      "description": "this is added to prevent layout shift due to border size change on active state (on immersive)",
-      "tags": [
-        "display",
-        "content",
-        "visualization",
-        "data",
-        "label",
-        "status",
-        "metadata",
-        "ui/Chip",
-        "autodocs",
-        "interactive",
-        "customizable"
-      ],
-      "relatedComponents": [],
-      "variants": [],
-      "commonProps": [
-        "size",
-        "disabled"
-      ],
-      "storybookStories": [
-        "Default"
-      ],
-      "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/Chip/Chip.vue",
-      "hasStorybook": true
-    },
     "Checkbox": {
       "name": "Checkbox",
       "category": "forms",
@@ -4297,6 +4388,35 @@
         "Default"
       ],
       "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/Checkbox/Checkbox.vue",
+      "hasStorybook": true
+    },
+    "Chip": {
+      "name": "Chip",
+      "category": "data-display",
+      "description": "this is added to prevent layout shift due to border size change on active state (on immersive)",
+      "tags": [
+        "display",
+        "content",
+        "visualization",
+        "data",
+        "label",
+        "status",
+        "metadata",
+        "ui/Chip",
+        "autodocs",
+        "interactive",
+        "customizable"
+      ],
+      "relatedComponents": [],
+      "variants": [],
+      "commonProps": [
+        "size",
+        "disabled"
+      ],
+      "storybookStories": [
+        "Default"
+      ],
+      "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/Chip/Chip.vue",
       "hasStorybook": true
     },
     "Carousel": {
@@ -4401,29 +4521,20 @@
       "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/Button/Button.vue",
       "hasStorybook": true
     },
-    "Breadcrumb": {
-      "name": "Breadcrumb",
-      "category": "navigation",
-      "description": "Breadcrumb component for navigation",
+    "Arrow": {
+      "name": "Arrow",
+      "category": "other",
+      "description": "Border color token to CSS value mapping",
       "tags": [
-        "nav",
-        "menu",
-        "routing",
-        "links",
-        "navigation",
-        "hierarchy",
-        "path",
-        "ui/Breadcrumb",
-        "autodocs"
+        "utility",
+        "misc"
       ],
       "relatedComponents": [],
       "variants": [],
       "commonProps": [],
-      "storybookStories": [
-        "Default"
-      ],
-      "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/Breadcrumb/Breadcrumb.vue",
-      "hasStorybook": true
+      "storybookStories": [],
+      "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/Arrow/Arrow.vue",
+      "hasStorybook": false
     },
     "Avatar": {
       "name": "Avatar",
@@ -4453,82 +4564,28 @@
       "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/Avatar/Avatar.vue",
       "hasStorybook": true
     },
-    "Arrow": {
-      "name": "Arrow",
-      "category": "other",
-      "description": "Border color token to CSS value mapping",
+    "Breadcrumb": {
+      "name": "Breadcrumb",
+      "category": "navigation",
+      "description": "Breadcrumb component for navigation",
       "tags": [
-        "utility",
-        "misc"
+        "nav",
+        "menu",
+        "routing",
+        "links",
+        "navigation",
+        "hierarchy",
+        "path",
+        "ui/Breadcrumb",
+        "autodocs"
       ],
       "relatedComponents": [],
       "variants": [],
       "commonProps": [],
-      "storybookStories": [],
-      "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/Arrow/Arrow.vue",
-      "hasStorybook": false
-    },
-    "SimplePagination": {
-      "name": "SimplePagination",
-      "category": "navigation",
-      "description": "SimplePagination component for navigation",
-      "tags": [
-        "nav",
-        "menu",
-        "routing",
-        "links",
-        "navigation",
-        "pages",
-        "data",
-        "ui/SimplePagination",
-        "autodocs"
-      ],
-      "relatedComponents": [],
-      "variants": [
-        "IndefinitePagination"
-      ],
-      "commonProps": [],
       "storybookStories": [
-        "Default",
-        "IndefinitePagination"
+        "Default"
       ],
-      "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/Pagination/SimplePagination.vue",
-      "hasStorybook": true
-    },
-    "Pagination": {
-      "name": "Pagination",
-      "category": "navigation",
-      "description": "Pagination component for navigation",
-      "tags": [
-        "nav",
-        "menu",
-        "routing",
-        "links",
-        "navigation",
-        "pages",
-        "data",
-        "ui/Pagination",
-        "autodocs"
-      ],
-      "relatedComponents": [],
-      "variants": [
-        "FixedLengthPagination"
-      ],
-      "commonProps": [
-        "v",
-        "if",
-        "pageNumber",
-        "totalEntities",
-        "isLoading",
-        "pageSize",
-        "startingPageIndex",
-        "class"
-      ],
-      "storybookStories": [
-        "Default",
-        "FixedLengthPagination"
-      ],
-      "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/Pagination/Pagination.vue",
+      "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/Breadcrumb/Breadcrumb.vue",
       "hasStorybook": true
     },
     "AnchorLink": {
@@ -4558,63 +4615,6 @@
       ],
       "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/AnchorLink/AnchorLink.vue",
       "hasStorybook": true
-    },
-    "ExploreTabs": {
-      "name": "ExploreTabs",
-      "category": "other",
-      "description": "ExploreTabs component with 7 props",
-      "tags": [
-        "utility",
-        "misc",
-        "navigation",
-        "switch",
-        "panels",
-        "ui/ExploreTabs",
-        "autodocs",
-        "interactive"
-      ],
-      "relatedComponents": [],
-      "variants": [],
-      "commonProps": [
-        "tabs",
-        "id",
-        "title",
-        "subtitle",
-        "icon",
-        "disabled"
-      ],
-      "storybookStories": [
-        "Default"
-      ],
-      "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/ExploreTabs/ExploreTabs.vue",
-      "hasStorybook": true
-    },
-    "ExploreTab": {
-      "name": "ExploreTab",
-      "category": "other",
-      "description": "ExploreTab component with 8 props",
-      "tags": [
-        "utility",
-        "misc",
-        "navigation",
-        "switch",
-        "panels",
-        "interactive",
-        "customizable"
-      ],
-      "relatedComponents": [],
-      "variants": [],
-      "commonProps": [
-        "id",
-        "title",
-        "subtitle",
-        "icon",
-        "variant",
-        "disabled"
-      ],
-      "storybookStories": [],
-      "path": "../wayground/frontend/packages/quizizz-ui/src/components/ui/ExploreTabs/ExploreTab.vue",
-      "hasStorybook": false
     }
   },
   "relationships": {
@@ -5005,13 +5005,13 @@
         "weight": 13
       },
       {
-        "from": "Button",
-        "to": "Surface",
+        "from": "Column",
+        "to": "Column",
         "weight": 12
       },
       {
-        "from": "Column",
-        "to": "Column",
+        "from": "Button",
+        "to": "Surface",
         "weight": 12
       },
       {
@@ -5106,12 +5106,12 @@
       },
       {
         "from": "Flex",
-        "to": "ProfileBadges",
+        "to": "QuestionDetailsCardLoader",
         "weight": 10
       },
       {
         "from": "Flex",
-        "to": "QuestionDetailsCardLoader",
+        "to": "ProfileBadges",
         "weight": 10
       },
       {
@@ -5421,11 +5421,6 @@
       },
       {
         "from": "Flex",
-        "to": "IntersectionObserverTrigger",
-        "weight": 6
-      },
-      {
-        "from": "Flex",
         "to": "StandardTags",
         "weight": 6
       },
@@ -5437,6 +5432,11 @@
       {
         "from": "Flex",
         "to": "ModalManager",
+        "weight": 6
+      },
+      {
+        "from": "Flex",
+        "to": "IntersectionObserverTrigger",
         "weight": 6
       },
       {
@@ -5696,7 +5696,12 @@
       },
       {
         "from": "Flex",
-        "to": "ShareResourceModal",
+        "to": "TeleportToLayer5",
+        "weight": 5
+      },
+      {
+        "from": "TeleportToLayer5",
+        "to": "Text",
         "weight": 5
       },
       {
@@ -5711,12 +5716,7 @@
       },
       {
         "from": "Flex",
-        "to": "TeleportToLayer5",
-        "weight": 5
-      },
-      {
-        "from": "TeleportToLayer5",
-        "to": "Text",
+        "to": "ShareResourceModal",
         "weight": 5
       },
       {
@@ -5725,13 +5725,13 @@
         "weight": 5
       },
       {
-        "from": "Flex",
-        "to": "TeamsCreateModal",
+        "from": "ClassModalsWithAccomodation",
+        "to": "Modal",
         "weight": 5
       },
       {
-        "from": "ClassModalsWithAccomodation",
-        "to": "Modal",
+        "from": "Flex",
+        "to": "TeamsCreateModal",
         "weight": 5
       },
       {
@@ -5885,11 +5885,6 @@
         "weight": 4
       },
       {
-        "from": "Flex",
-        "to": "LoadingState",
-        "weight": 4
-      },
-      {
         "from": "Box",
         "to": "GlobalOptionContainer",
         "weight": 4
@@ -5897,6 +5892,11 @@
       {
         "from": "Box",
         "to": "GameModeCarousel",
+        "weight": 4
+      },
+      {
+        "from": "Flex",
+        "to": "LoadingState",
         "weight": 4
       },
       {
@@ -6095,21 +6095,6 @@
         "weight": 4
       },
       {
-        "from": "Modal",
-        "to": "Transition",
-        "weight": 4
-      },
-      {
-        "from": "ButtonV2",
-        "to": "ButtonV2",
-        "weight": 4
-      },
-      {
-        "from": "ButtonV2",
-        "to": "Flex",
-        "weight": 4
-      },
-      {
         "from": "Divider",
         "to": "HintDisplay",
         "weight": 4
@@ -6127,6 +6112,21 @@
       {
         "from": "Divider",
         "to": "PermissionGuideModal",
+        "weight": 4
+      },
+      {
+        "from": "ButtonV2",
+        "to": "ButtonV2",
+        "weight": 4
+      },
+      {
+        "from": "ButtonV2",
+        "to": "Flex",
+        "weight": 4
+      },
+      {
+        "from": "Modal",
+        "to": "Transition",
         "weight": 4
       },
       {
@@ -6200,11 +6200,6 @@
         "weight": 4
       },
       {
-        "from": "Flex",
-        "to": "Floating",
-        "weight": 4
-      },
-      {
         "from": "FixedSize",
         "to": "TeamFooter",
         "weight": 4
@@ -6212,6 +6207,11 @@
       {
         "from": "Button",
         "to": "LiveReactionCounter",
+        "weight": 4
+      },
+      {
+        "from": "Flex",
+        "to": "Floating",
         "weight": 4
       },
       {
@@ -6355,6 +6355,16 @@
         "weight": 3
       },
       {
+        "from": "Flex",
+        "to": "VerifiedContentEntryBanner",
+        "weight": 3
+      },
+      {
+        "from": "Flex",
+        "to": "TeacherAppreciationExploreHeader",
+        "weight": 3
+      },
+      {
         "from": "Box",
         "to": "Navbar",
         "weight": 3
@@ -6377,16 +6387,6 @@
       {
         "from": "Divider",
         "to": "Grid",
-        "weight": 3
-      },
-      {
-        "from": "Flex",
-        "to": "VerifiedContentEntryBanner",
-        "weight": 3
-      },
-      {
-        "from": "Flex",
-        "to": "TeacherAppreciationExploreHeader",
         "weight": 3
       },
       {
@@ -6545,6 +6545,16 @@
         "weight": 3
       },
       {
+        "from": "Flex",
+        "to": "PassageQuestionList",
+        "weight": 3
+      },
+      {
+        "from": "Sticky",
+        "to": "TeacherPacedSelectionModal",
+        "weight": 3
+      },
+      {
         "from": "ProfileHeaderLoader",
         "to": "Text",
         "weight": 3
@@ -6562,16 +6572,6 @@
       {
         "from": "Flex",
         "to": "UiTable",
-        "weight": 3
-      },
-      {
-        "from": "Flex",
-        "to": "PassageQuestionList",
-        "weight": 3
-      },
-      {
-        "from": "Sticky",
-        "to": "TeacherPacedSelectionModal",
         "weight": 3
       },
       {
@@ -6640,13 +6640,13 @@
         "weight": 3
       },
       {
-        "from": "Flex",
-        "to": "MediaVideo",
+        "from": "FA",
+        "to": "NamespaceProvider",
         "weight": 3
       },
       {
-        "from": "FA",
-        "to": "NamespaceProvider",
+        "from": "Flex",
+        "to": "MediaVideo",
         "weight": 3
       },
       {
@@ -6665,18 +6665,13 @@
         "weight": 3
       },
       {
-        "from": "Pill",
-        "to": "Text",
-        "weight": 3
-      },
-      {
         "from": "Modal",
         "to": "TeleportToLayer5",
         "weight": 3
       },
       {
-        "from": "Dropdown",
-        "to": "Flex",
+        "from": "Pill",
+        "to": "Text",
         "weight": 3
       },
       {
@@ -6700,7 +6695,7 @@
         "weight": 3
       },
       {
-        "from": "AuthNavbar",
+        "from": "Dropdown",
         "to": "Flex",
         "weight": 3
       },
@@ -6735,13 +6730,23 @@
         "weight": 3
       },
       {
-        "from": "Icon",
-        "to": "Surface",
+        "from": "AuthNavbar",
+        "to": "Flex",
         "weight": 3
       },
       {
         "from": "FA",
         "to": "ProgressBar",
+        "weight": 3
+      },
+      {
+        "from": "EditGameSettingsSideSheet",
+        "to": "Modal",
+        "weight": 3
+      },
+      {
+        "from": "Icon",
+        "to": "Surface",
         "weight": 3
       },
       {
@@ -6755,22 +6760,12 @@
         "weight": 3
       },
       {
-        "from": "EditGameSettingsSideSheet",
-        "to": "Modal",
-        "weight": 3
-      },
-      {
         "from": "PlayersGrid",
         "to": "Transition",
         "weight": 3
       },
       {
         "from": "EnableMicPermissionModal",
-        "to": "Transition",
-        "weight": 3
-      },
-      {
-        "from": "SeoFooter",
         "to": "Transition",
         "weight": 3
       },
@@ -6792,6 +6787,11 @@
       {
         "from": "Box",
         "to": "PermissionGuideModal",
+        "weight": 3
+      },
+      {
+        "from": "SeoFooter",
+        "to": "Transition",
         "weight": 3
       },
       {
@@ -6920,11 +6920,6 @@
         "weight": 3
       },
       {
-        "from": "FixedSize",
-        "to": "MediaSeeker",
-        "weight": 3
-      },
-      {
         "from": "DeadlineUpdateModal",
         "to": "Flex",
         "weight": 3
@@ -6942,6 +6937,11 @@
       {
         "from": "Flex",
         "to": "RenameReportModal",
+        "weight": 3
+      },
+      {
+        "from": "FixedSize",
+        "to": "MediaSeeker",
         "weight": 3
       },
       {
@@ -7005,6 +7005,21 @@
         "weight": 3
       },
       {
+        "from": "Flex",
+        "to": "OutOfStorageModal",
+        "weight": 3
+      },
+      {
+        "from": "PlayerDeletionWarning",
+        "to": "PlayerEventInfoModal",
+        "weight": 3
+      },
+      {
+        "from": "Flex",
+        "to": "TeamFooter",
+        "weight": 3
+      },
+      {
         "from": "SlideViewer",
         "to": "Text",
         "weight": 3
@@ -7022,21 +7037,6 @@
       {
         "from": "Floating",
         "to": "Text",
-        "weight": 3
-      },
-      {
-        "from": "Flex",
-        "to": "OutOfStorageModal",
-        "weight": 3
-      },
-      {
-        "from": "Flex",
-        "to": "TeamFooter",
-        "weight": 3
-      },
-      {
-        "from": "PlayerDeletionWarning",
-        "to": "PlayerEventInfoModal",
         "weight": 3
       },
       {
@@ -7159,8 +7159,8 @@
         "HorizontalBarWithProgress",
         "ShadowButton",
         "GameSettingDivider",
-        "ProfileBadges",
         "QuestionDetailsCardLoader",
+        "ProfileBadges",
         "Navbar",
         "Message",
         "FiltersSideSheet",
@@ -7201,10 +7201,10 @@
         "PlayerDeletionWarning",
         "StudentSelectBanner",
         "NetworkRecommendationsInAllStudentsEditor",
-        "IntersectionObserverTrigger",
         "StandardTags",
         "ActivityDetailsActions",
         "ModalManager",
+        "IntersectionObserverTrigger",
         "WorksheetCustomSettings",
         "PassageCustomSettings",
         "SideSheet",
@@ -7225,8 +7225,8 @@
         "ScrollPanel",
         "ReviewSection",
         "Table",
-        "ShareResourceModal",
         "TeleportToLayer5",
+        "ShareResourceModal",
         "TeamsCreateModal",
         "ObjectionModalV3",
         "IVADocumentSelectorModal",
@@ -7268,10 +7268,10 @@
         "MathEditorModal",
         "DifferentiatedVersionsHowItWorksModal",
         "SubtopicSelector",
+        "PassageQuestionList",
         "CollectionsEmptyState",
         "CollectionEmptyState",
         "UiTable",
-        "PassageQuestionList",
         "FilterDropdown",
         "StandardDetailsModal",
         "ErrorState",
@@ -7280,16 +7280,16 @@
         "Toaster",
         "MediaVideo",
         "ByocUploadMobileView",
-        "Dropdown",
         "AddFirstClass",
         "ClassEmptyState",
         "ClassesModals",
         "SelectLMSModal",
-        "AuthNavbar",
+        "Dropdown",
         "ShareAppLink",
         "SndIcon",
         "SuperIcon",
         "GameOptionUISubAction",
+        "AuthNavbar",
         "AuthGuard",
         "ObjectionsUpdateModal",
         "GuidelinesSection",
@@ -7820,12 +7820,12 @@
       "ToggleButton": [
         "QReadAloudSpeedSlider"
       ],
+      "QuestionDetailsCardLoader": [
+        "Flex"
+      ],
       "ProfileBadges": [
         "Flex",
         "Text"
-      ],
-      "QuestionDetailsCardLoader": [
-        "Flex"
       ],
       "SelectBox": [
         "FA",
@@ -7994,9 +7994,6 @@
       "NetworkRecommendationsInAllStudentsEditor": [
         "Flex"
       ],
-      "IntersectionObserverTrigger": [
-        "Flex"
-      ],
       "StandardTags": [
         "Flex",
         "Text"
@@ -8008,6 +8005,9 @@
       "ModalManager": [
         "Flex",
         "Columns"
+      ],
+      "IntersectionObserverTrigger": [
+        "Flex"
       ],
       "StartTrialModal": [
         "Transition",
@@ -8103,11 +8103,11 @@
       "ShareResourceModal": [
         "Flex"
       ],
-      "TeamsCreateModal": [
-        "Flex"
-      ],
       "ClassModalsWithAccomodation": [
         "Modal"
+      ],
+      "TeamsCreateModal": [
+        "Flex"
       ],
       "ObjectionModalV3": [
         "Flex"
@@ -8165,14 +8165,14 @@
       "ErrorPage": [
         "Flex"
       ],
-      "LoadingState": [
-        "Flex"
-      ],
       "GlobalOptionContainer": [
         "Box"
       ],
       "GameModeCarousel": [
         "Box"
+      ],
+      "LoadingState": [
+        "Flex"
       ],
       "Carousel": [
         "Flex"
@@ -8295,17 +8295,17 @@
       "MultiSelect": [
         "Flex"
       ],
-      "Floating": [
-        "Flex",
-        "Surface",
-        "Text"
-      ],
       "TeamFooter": [
         "FixedSize",
         "Flex"
       ],
       "LiveReactionCounter": [
         "Button"
+      ],
+      "Floating": [
+        "Flex",
+        "Surface",
+        "Text"
       ],
       "Menu": [
         "Transition",
@@ -8480,9 +8480,6 @@
       "SelectLMSModal": [
         "Flex"
       ],
-      "AuthNavbar": [
-        "Flex"
-      ],
       "ShareAppLink": [
         "Flex"
       ],
@@ -8491,6 +8488,9 @@
       ],
       "GameOptionChipContainer": [
         "Box"
+      ],
+      "AuthNavbar": [
+        "Flex"
       ],
       "QuestionsDetailsCardLoader": [
         "Column"
@@ -8558,9 +8558,6 @@
       "BlockedWidget": [
         "Flex"
       ],
-      "MediaSeeker": [
-        "FixedSize"
-      ],
       "DeadlineUpdateModal": [
         "Flex"
       ],
@@ -8572,6 +8569,9 @@
       ],
       "RenameReportModal": [
         "Flex"
+      ],
+      "MediaSeeker": [
+        "FixedSize"
       ],
       "ConfirmPublicVisibilityModal": [
         "FA",

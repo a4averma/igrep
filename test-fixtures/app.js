@@ -8,7 +8,7 @@ function createApp() {
     
     // TODO: add middleware
     app.get('/', (req, res) => {
-        res.json({ status: 'ok', message: 'instant-grep test fixture' });
+        res.json({ status: 'ok', message: 'igrep test fixture' });
     });
     
     return app;

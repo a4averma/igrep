@@ -1,8 +1,8 @@
-# instant-grep
+# igrep
 
 **Blazing-fast regex search using sparse n-gram indexes.**
 
-Instant-grep (`igrep`) builds a pre-computed index over your codebase so that regex queries return results in milliseconds instead of seconds — even on massive repositories.
+`igrep` builds a pre-computed index over your codebase so that regex queries return results in milliseconds instead of seconds — even on massive repositories.
 
 ![Benchmark](benchmark.png)
 
