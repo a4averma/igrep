@@ -1,0 +1,12 @@
+This file tests various whitespace patterns.
+	This line starts with a tab.
+    This line has 4 spaces.
+        This line has 8 spaces.
+This	has	internal	tabs.
+
+Above was a blank line.
+
+
+Above were two blank lines.
+Trailing spaces follow:   
+End of file with no trailing newline.

@@ -1,0 +1,19 @@
+{
+  "name": "instant-grep-test",
+  "version": "0.1.0",
+  "settings": {
+    "max_file_size": 10485760,
+    "num_workers": 4,
+    "index_path": "/tmp/instant-grep/index",
+    "ignore_patterns": [".git", "node_modules", "target", "*.bin"],
+    "case_sensitive": true,
+    "follow_symlinks": false
+  },
+  "file_types": {
+    "rust": [".rs"],
+    "python": [".py"],
+    "javascript": [".js", ".jsx"],
+    "typescript": [".ts", ".tsx"],
+    "go": [".go"]
+  }
+}

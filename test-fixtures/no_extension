@@ -1,0 +1,5 @@
+#!/bin/sh
+# This file has no extension
+# It tests that extensionless files are indexed
+echo "no extension file"
+# FIXME: should we detect shebang lines?
