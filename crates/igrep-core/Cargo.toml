@@ -3,6 +3,9 @@ name = "igrep-core"
 version = "0.1.0"
 edition = "2021"
 
+[lib]
+bench = false
+
 [dependencies]
 regex-syntax.workspace = true
 regex.workspace = true
@@ -11,8 +14,21 @@ ignore.workspace = true
 crc32fast.workspace = true
 anyhow.workspace = true
 bstr.workspace = true
+rayon.workspace = true
 tempfile.workspace = true
 
 [dev-dependencies]
 proptest.workspace = true
 criterion.workspace = true
+
+[[bench]]
+name = "ngram_bench"
+harness = false
+
+[[bench]]
+name = "search_bench"
+harness = false
+
+[[bench]]
+name = "index_bench"
+harness = false

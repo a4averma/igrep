@@ -1,0 +1,4 @@
+This is a hidden file for testing dotfile detection.
+It should be found when searching hidden files is enabled.
+TODO: ensure hidden file search works correctly
+Secret pattern: HIDDEN_MARKER_123

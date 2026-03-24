@@ -1,4 +1,6 @@
 /target
 **/*.swp
 .DS_Store
-.sisyphus/evidence/
+.sisyphus/
+.ruff_cache/
+.ui-mcp/

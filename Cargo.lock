@@ -423,6 +423,8 @@ dependencies = [
  "anyhow",
  "clap",
  "igrep-core",
+ "rayon",
+ "regex",
 ]
 
 [[package]]
@@ -436,6 +438,7 @@ dependencies = [
  "ignore",
  "memmap2",
  "proptest",
+ "rayon",
  "regex",
  "regex-syntax",
  "tempfile",

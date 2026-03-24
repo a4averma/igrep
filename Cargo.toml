@@ -13,4 +13,6 @@ proptest = "1"
 criterion = { version = "0.5", features = ["html_reports"] }
 anyhow = "1"
 bstr = "1"
+rayon = "1"
 tempfile = "3"
+
