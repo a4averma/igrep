@@ -129,7 +129,7 @@ Two thin CLI binaries built with [clap](https://github.com/clap-rs/clap):
 
 ## Credits
 
-- [Vicent Marti — "Instant Apply" (Cursor blog)](https://www.cursor.com/blog/instant-apply) — the inspiration for this project's approach to code search indexing
+- [Vicent Marti — "Fast regex search: indexing text for agent tools" (Cursor blog)](https://cursor.com/blog/fast-regex-search) — the inspiration for this project's approach to code search indexing
 - [google/codesearch](https://github.com/google/codesearch) — Russ Cox's original trigram-based code search tool
 - [danlark1/sparse_ngrams](https://github.com/danlark1/sparse_ngrams) — research on sparse n-gram indexes for approximate string matching
 
